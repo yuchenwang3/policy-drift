@@ -402,7 +402,7 @@ def main():
     parser.add_argument("--threads", type=int, default=1,
                         help="Fixed CPU operator condition; tiny matrices avoid multithread overhead.")
     parser.add_argument("--wandb-mode", choices=["online", "offline", "disabled"], default="offline")
-    parser.add_argument("--wandb-project", default="numerical-policy-lab")
+    parser.add_argument("--wandb-project", default="policy-drift")
     parser.add_argument("--wandb-entity", default=None)
     parser.add_argument("--run-id", default=None)
     parser.add_argument("--reuse-operator-results", type=Path, default=None,

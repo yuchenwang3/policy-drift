@@ -412,7 +412,7 @@ def main():
     parser.add_argument('--temperature', type=float, default=4.0)
     parser.add_argument('--run-id', default=None, help='Explicit W&B run ID; omit for a fresh run.')
     parser.add_argument('--wandb-mode', choices=['online', 'offline', 'disabled'], default='offline')
-    parser.add_argument('--wandb-project', default='numerical-policy-lab')
+    parser.add_argument('--wandb-project', default='policy-drift')
     parser.add_argument('--wandb-entity', default=None)
     args = parser.parse_args()
     prepared = json.loads(args.prepared.read_text())

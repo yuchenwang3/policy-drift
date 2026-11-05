@@ -1,4 +1,4 @@
-# Numerical Policy Lab
+# PolicyDrift
 
 Small experiments on how floating-point loss residuals become optimizer updates and next-token decisions. The main example uses the public **Qwen2.5-0.5B** model: a self-distillation objective with identical teacher and student logits has an ideal zero gradient, yet native soft-target cross-entropy can leave a residual that changes the next-token argmax after one fresh Adam step.
 
