@@ -1,0 +1,7 @@
+-r requirements.txt
+transformers==5.8.1
+liger-kernel==0.8.5
+triton==3.6.0
+huggingface-hub==1.19.0
+safetensors==0.8.0
+tokenizers==0.22.2

@@ -1,0 +1,1299 @@
+{
+  "status": "complete",
+  "hybrid_updates": 140,
+  "individual_optimizer_step_calls": 280,
+  "continuous_warmup_hybrid_updates": 128,
+  "probe_hybrid_updates": 12,
+  "paired_comparisons": 6,
+  "results": [
+    {
+      "case": "original-transition",
+      "state_step": 0,
+      "zero_gradient_control": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.0,
+            "changed_coordinates": 0
+          },
+          "adamw": {
+            "update_l2": 0.0,
+            "changed_coordinates": 0
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.0,
+          "kl_max": 0.0,
+          "different_logits": 0,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            13253
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "Auto"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "native_gradient_branch": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.0028140889296560177,
+            "changed_coordinates": 343428151
+          },
+          "adamw": {
+            "update_l2": 0.0008919083141654642,
+            "changed_coordinates": 102781558
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 2.373458469436773,
+          "kl_max": 2.373458469436773,
+          "different_logits": 151725,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            76
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "m"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_residual_updates": {
+        "muon": {
+          "update_l2": 0.0028140889296560177,
+          "changed_coordinates": 343428151
+        },
+        "adamw": {
+          "update_l2": 0.0008919083141654642,
+          "changed_coordinates": 102781558
+        }
+      },
+      "joint_residual_policy": {
+        "finite_logits": true,
+        "kl_mean": 2.373458469436773,
+        "kl_max": 2.373458469436773,
+        "different_logits": 151725,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "isolated_group_residual_policy": {
+        "muon": {
+          "finite_logits": true,
+          "kl_mean": 0.7896518832259407,
+          "kl_max": 0.7896518832259407,
+          "different_logits": 151538,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            76
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "m"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        },
+        "adamw": {
+          "finite_logits": true,
+          "kl_mean": 2.046729697235738,
+          "kl_max": 2.046729697235738,
+          "different_logits": 151698,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            76
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "m"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_gradient_l2": {
+        "muon": 0.0001845068153726838,
+        "adamw": 7.289753394981888e-05
+      },
+      "case_fixture": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case": "smallest-descendant",
+      "state_step": 0,
+      "zero_gradient_control": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.0,
+            "changed_coordinates": 0
+          },
+          "adamw": {
+            "update_l2": 0.0,
+            "changed_coordinates": 0
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.0,
+          "kl_max": 0.0,
+          "different_logits": 0,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            788
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "\":"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "native_gradient_branch": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.002151924368110364,
+            "changed_coordinates": 315040243
+          },
+          "adamw": {
+            "update_l2": 0.0005153333572446643,
+            "changed_coordinates": 94854319
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.26207802877555436,
+          "kl_max": 0.26207802877555436,
+          "different_logits": 151191,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_residual_updates": {
+        "muon": {
+          "update_l2": 0.002151924368110364,
+          "changed_coordinates": 315040243
+        },
+        "adamw": {
+          "update_l2": 0.0005153333572446643,
+          "changed_coordinates": 94854319
+        }
+      },
+      "joint_residual_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.26207802877555436,
+        "kl_max": 0.26207802877555436,
+        "different_logits": 151191,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "isolated_group_residual_policy": {
+        "muon": {
+          "finite_logits": true,
+          "kl_mean": 0.030041627023681683,
+          "kl_max": 0.030041627023681683,
+          "different_logits": 150582,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        },
+        "adamw": {
+          "finite_logits": true,
+          "kl_mean": 0.6208555503079204,
+          "kl_max": 0.6208555503079204,
+          "different_logits": 151387,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_gradient_l2": {
+        "muon": 3.74026554164987e-05,
+        "adamw": 1.0673408710364376e-05
+      },
+      "case_fixture": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case": "original-transition",
+      "state_step": 16,
+      "zero_gradient_control": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.007834776725500035,
+            "changed_coordinates": 356425581
+          },
+          "adamw": {
+            "update_l2": 0.06831963807984526,
+            "changed_coordinates": 136199760
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.6641637229294404,
+          "kl_max": 0.6641637229294404,
+          "different_logits": 151550,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            82
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "s"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "native_gradient_branch": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.007834820045014434,
+            "changed_coordinates": 356425744
+          },
+          "adamw": {
+            "update_l2": 0.06831975054977357,
+            "changed_coordinates": 136199769
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.2577797097700113,
+          "kl_max": 0.2577797097700113,
+          "different_logits": 151205,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            13253
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "Auto"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_residual_updates": {
+        "muon": {
+          "update_l2": 6.379092687686897e-05,
+          "changed_coordinates": 120150615
+        },
+        "adamw": {
+          "update_l2": 2.2588443556830884e-06,
+          "changed_coordinates": 12610847
+        }
+      },
+      "joint_residual_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.13162447472667432,
+        "kl_max": 0.13162447472667432,
+        "different_logits": 151018,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          82
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "s"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "isolated_group_residual_policy": {
+        "muon": {
+          "finite_logits": true,
+          "kl_mean": 0.13162447472786315,
+          "kl_max": 0.13162447472786315,
+          "different_logits": 151018,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            82
+          ],
+          "after_argmax_ids": [
+            13253
+          ],
+          "before_argmax_text": [
+            "s"
+          ],
+          "after_argmax_text": [
+            "Auto"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        },
+        "adamw": {
+          "finite_logits": true,
+          "kl_mean": 1.0418907103032726e-13,
+          "kl_max": 1.0418907103032726e-13,
+          "different_logits": 3,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            82
+          ],
+          "after_argmax_ids": [
+            82
+          ],
+          "before_argmax_text": [
+            "s"
+          ],
+          "after_argmax_text": [
+            "s"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_gradient_l2": {
+        "muon": 0.0001845068153726838,
+        "adamw": 7.289753394981888e-05
+      },
+      "case_fixture": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case": "smallest-descendant",
+      "state_step": 16,
+      "zero_gradient_control": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.007834776725500035,
+            "changed_coordinates": 356425581
+          },
+          "adamw": {
+            "update_l2": 0.06831963807984526,
+            "changed_coordinates": 136199760
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.3552457798399794,
+          "kl_max": 0.3552457798399794,
+          "different_logits": 151247,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "native_gradient_branch": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.007834790088525249,
+            "changed_coordinates": 356425742
+          },
+          "adamw": {
+            "update_l2": 0.06831967150503868,
+            "changed_coordinates": 136199738
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.23764579777592787,
+          "kl_max": 0.23764579777592787,
+          "different_logits": 151044,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_residual_updates": {
+        "muon": {
+          "update_l2": 4.1478622597897254e-05,
+          "changed_coordinates": 93118644
+        },
+        "adamw": {
+          "update_l2": 2.565670536428602e-06,
+          "changed_coordinates": 13419467
+        }
+      },
+      "joint_residual_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.012249403800310494,
+        "kl_max": 0.012249403800310494,
+        "different_logits": 148784,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          8226
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "kit"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "isolated_group_residual_policy": {
+        "muon": {
+          "finite_logits": true,
+          "kl_mean": 0.01224940384184273,
+          "kl_max": 0.01224940384184273,
+          "different_logits": 148784,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            8226
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "kit"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        },
+        "adamw": {
+          "finite_logits": true,
+          "kl_mean": 1.2804549411070143e-13,
+          "kl_max": 1.2804549411070143e-13,
+          "different_logits": 3,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            8226
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "kit"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_gradient_l2": {
+        "muon": 3.74026554164987e-05,
+        "adamw": 1.0673408710364376e-05
+      },
+      "case_fixture": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case": "original-transition",
+      "state_step": 128,
+      "zero_gradient_control": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.008746309283842594,
+            "changed_coordinates": 356626030
+          },
+          "adamw": {
+            "update_l2": 0.00019652785233209192,
+            "changed_coordinates": 45462542
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.12500758783723273,
+          "kl_max": 0.12500758783723273,
+          "different_logits": 150998,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            13253
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "Auto"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "native_gradient_branch": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.00874627671265163,
+            "changed_coordinates": 356627091
+          },
+          "adamw": {
+            "update_l2": 0.00019653009283148064,
+            "changed_coordinates": 48255739
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 1.2251305264073078,
+          "kl_max": 1.2251305264073078,
+          "different_logits": 151642,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            76
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "m"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_residual_updates": {
+        "muon": {
+          "update_l2": 0.0003642837817538668,
+          "changed_coordinates": 226194013
+        },
+        "adamw": {
+          "update_l2": 1.6005291133307827e-06,
+          "changed_coordinates": 13209329
+        }
+      },
+      "joint_residual_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.6126688164655412,
+        "kl_max": 0.6126688164655412,
+        "different_logits": 151499,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "isolated_group_residual_policy": {
+        "muon": {
+          "finite_logits": true,
+          "kl_mean": 0.6126688164655412,
+          "kl_max": 0.6126688164655412,
+          "different_logits": 151499,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            76
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "m"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        },
+        "adamw": {
+          "finite_logits": true,
+          "kl_mean": 0.0,
+          "kl_max": 0.0,
+          "different_logits": 0,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            13253
+          ],
+          "after_argmax_ids": [
+            13253
+          ],
+          "before_argmax_text": [
+            "Auto"
+          ],
+          "after_argmax_text": [
+            "Auto"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_gradient_l2": {
+        "muon": 0.0001845068153726838,
+        "adamw": 7.289753394981888e-05
+      },
+      "case_fixture": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case": "smallest-descendant",
+      "state_step": 128,
+      "zero_gradient_control": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.008746309283842594,
+            "changed_coordinates": 356626030
+          },
+          "adamw": {
+            "update_l2": 0.00019652785233209192,
+            "changed_coordinates": 45462542
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.018233434085800804,
+          "kl_max": 0.018233434085800804,
+          "different_logits": 149372,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "native_gradient_branch": {
+        "group_updates": {
+          "muon": {
+            "update_l2": 0.008746349451956917,
+            "changed_coordinates": 356626689
+          },
+          "adamw": {
+            "update_l2": 0.00019653305277125775,
+            "changed_coordinates": 48169980
+          }
+        },
+        "policy": {
+          "finite_logits": true,
+          "kl_mean": 0.023500132689661116,
+          "kl_max": 0.023500132689661116,
+          "different_logits": 149729,
+          "argmax_different_prefixes": 1,
+          "before_argmax_ids": [
+            788
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "\":"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_residual_updates": {
+        "muon": {
+          "update_l2": 0.00017635214660640918,
+          "changed_coordinates": 191600219
+        },
+        "adamw": {
+          "update_l2": 1.9945849653066767e-06,
+          "changed_coordinates": 13620282
+        }
+      },
+      "joint_residual_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0010451423733089458,
+        "kl_max": 0.0010451423733089458,
+        "different_logits": 137858,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          8226
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "kit"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "isolated_group_residual_policy": {
+        "muon": {
+          "finite_logits": true,
+          "kl_mean": 0.0010451423733089458,
+          "kl_max": 0.0010451423733089458,
+          "different_logits": 137858,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            8226
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "kit"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        },
+        "adamw": {
+          "finite_logits": true,
+          "kl_mean": 0.0,
+          "kl_max": 0.0,
+          "different_logits": 0,
+          "argmax_different_prefixes": 0,
+          "before_argmax_ids": [
+            8226
+          ],
+          "after_argmax_ids": [
+            8226
+          ],
+          "before_argmax_text": [
+            "kit"
+          ],
+          "after_argmax_text": [
+            "kit"
+          ],
+          "kl_calculation": "centered expm1/log1p, small-delta series"
+        }
+      },
+      "group_gradient_l2": {
+        "muon": 3.74026554164987e-05,
+        "adamw": 1.0673408710364376e-05
+      },
+      "case_fixture": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    }
+  ],
+  "group_info": {
+    "muon": {
+      "parameter_tensors": 168,
+      "parameter_count": 357826560,
+      "names": [
+        "model.layers.0.self_attn.q_proj.weight",
+        "model.layers.0.self_attn.k_proj.weight",
+        "model.layers.0.self_attn.v_proj.weight",
+        "model.layers.0.self_attn.o_proj.weight",
+        "model.layers.0.mlp.gate_proj.weight",
+        "model.layers.0.mlp.up_proj.weight",
+        "model.layers.0.mlp.down_proj.weight",
+        "model.layers.1.self_attn.q_proj.weight",
+        "model.layers.1.self_attn.k_proj.weight",
+        "model.layers.1.self_attn.v_proj.weight",
+        "model.layers.1.self_attn.o_proj.weight",
+        "model.layers.1.mlp.gate_proj.weight",
+        "model.layers.1.mlp.up_proj.weight",
+        "model.layers.1.mlp.down_proj.weight",
+        "model.layers.2.self_attn.q_proj.weight",
+        "model.layers.2.self_attn.k_proj.weight",
+        "model.layers.2.self_attn.v_proj.weight",
+        "model.layers.2.self_attn.o_proj.weight",
+        "model.layers.2.mlp.gate_proj.weight",
+        "model.layers.2.mlp.up_proj.weight",
+        "model.layers.2.mlp.down_proj.weight",
+        "model.layers.3.self_attn.q_proj.weight",
+        "model.layers.3.self_attn.k_proj.weight",
+        "model.layers.3.self_attn.v_proj.weight",
+        "model.layers.3.self_attn.o_proj.weight",
+        "model.layers.3.mlp.gate_proj.weight",
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.3.mlp.down_proj.weight",
+        "model.layers.4.self_attn.q_proj.weight",
+        "model.layers.4.self_attn.k_proj.weight",
+        "model.layers.4.self_attn.v_proj.weight",
+        "model.layers.4.self_attn.o_proj.weight",
+        "model.layers.4.mlp.gate_proj.weight",
+        "model.layers.4.mlp.up_proj.weight",
+        "model.layers.4.mlp.down_proj.weight",
+        "model.layers.5.self_attn.q_proj.weight",
+        "model.layers.5.self_attn.k_proj.weight",
+        "model.layers.5.self_attn.v_proj.weight",
+        "model.layers.5.self_attn.o_proj.weight",
+        "model.layers.5.mlp.gate_proj.weight",
+        "model.layers.5.mlp.up_proj.weight",
+        "model.layers.5.mlp.down_proj.weight",
+        "model.layers.6.self_attn.q_proj.weight",
+        "model.layers.6.self_attn.k_proj.weight",
+        "model.layers.6.self_attn.v_proj.weight",
+        "model.layers.6.self_attn.o_proj.weight",
+        "model.layers.6.mlp.gate_proj.weight",
+        "model.layers.6.mlp.up_proj.weight",
+        "model.layers.6.mlp.down_proj.weight",
+        "model.layers.7.self_attn.q_proj.weight",
+        "model.layers.7.self_attn.k_proj.weight",
+        "model.layers.7.self_attn.v_proj.weight",
+        "model.layers.7.self_attn.o_proj.weight",
+        "model.layers.7.mlp.gate_proj.weight",
+        "model.layers.7.mlp.up_proj.weight",
+        "model.layers.7.mlp.down_proj.weight",
+        "model.layers.8.self_attn.q_proj.weight",
+        "model.layers.8.self_attn.k_proj.weight",
+        "model.layers.8.self_attn.v_proj.weight",
+        "model.layers.8.self_attn.o_proj.weight",
+        "model.layers.8.mlp.gate_proj.weight",
+        "model.layers.8.mlp.up_proj.weight",
+        "model.layers.8.mlp.down_proj.weight",
+        "model.layers.9.self_attn.q_proj.weight",
+        "model.layers.9.self_attn.k_proj.weight",
+        "model.layers.9.self_attn.v_proj.weight",
+        "model.layers.9.self_attn.o_proj.weight",
+        "model.layers.9.mlp.gate_proj.weight",
+        "model.layers.9.mlp.up_proj.weight",
+        "model.layers.9.mlp.down_proj.weight",
+        "model.layers.10.self_attn.q_proj.weight",
+        "model.layers.10.self_attn.k_proj.weight",
+        "model.layers.10.self_attn.v_proj.weight",
+        "model.layers.10.self_attn.o_proj.weight",
+        "model.layers.10.mlp.gate_proj.weight",
+        "model.layers.10.mlp.up_proj.weight",
+        "model.layers.10.mlp.down_proj.weight",
+        "model.layers.11.self_attn.q_proj.weight",
+        "model.layers.11.self_attn.k_proj.weight",
+        "model.layers.11.self_attn.v_proj.weight",
+        "model.layers.11.self_attn.o_proj.weight",
+        "model.layers.11.mlp.gate_proj.weight",
+        "model.layers.11.mlp.up_proj.weight",
+        "model.layers.11.mlp.down_proj.weight",
+        "model.layers.12.self_attn.q_proj.weight",
+        "model.layers.12.self_attn.k_proj.weight",
+        "model.layers.12.self_attn.v_proj.weight",
+        "model.layers.12.self_attn.o_proj.weight",
+        "model.layers.12.mlp.gate_proj.weight",
+        "model.layers.12.mlp.up_proj.weight",
+        "model.layers.12.mlp.down_proj.weight",
+        "model.layers.13.self_attn.q_proj.weight",
+        "model.layers.13.self_attn.k_proj.weight",
+        "model.layers.13.self_attn.v_proj.weight",
+        "model.layers.13.self_attn.o_proj.weight",
+        "model.layers.13.mlp.gate_proj.weight",
+        "model.layers.13.mlp.up_proj.weight",
+        "model.layers.13.mlp.down_proj.weight",
+        "model.layers.14.self_attn.q_proj.weight",
+        "model.layers.14.self_attn.k_proj.weight",
+        "model.layers.14.self_attn.v_proj.weight",
+        "model.layers.14.self_attn.o_proj.weight",
+        "model.layers.14.mlp.gate_proj.weight",
+        "model.layers.14.mlp.up_proj.weight",
+        "model.layers.14.mlp.down_proj.weight",
+        "model.layers.15.self_attn.q_proj.weight",
+        "model.layers.15.self_attn.k_proj.weight",
+        "model.layers.15.self_attn.v_proj.weight",
+        "model.layers.15.self_attn.o_proj.weight",
+        "model.layers.15.mlp.gate_proj.weight",
+        "model.layers.15.mlp.up_proj.weight",
+        "model.layers.15.mlp.down_proj.weight",
+        "model.layers.16.self_attn.q_proj.weight",
+        "model.layers.16.self_attn.k_proj.weight",
+        "model.layers.16.self_attn.v_proj.weight",
+        "model.layers.16.self_attn.o_proj.weight",
+        "model.layers.16.mlp.gate_proj.weight",
+        "model.layers.16.mlp.up_proj.weight",
+        "model.layers.16.mlp.down_proj.weight",
+        "model.layers.17.self_attn.q_proj.weight",
+        "model.layers.17.self_attn.k_proj.weight",
+        "model.layers.17.self_attn.v_proj.weight",
+        "model.layers.17.self_attn.o_proj.weight",
+        "model.layers.17.mlp.gate_proj.weight",
+        "model.layers.17.mlp.up_proj.weight",
+        "model.layers.17.mlp.down_proj.weight",
+        "model.layers.18.self_attn.q_proj.weight",
+        "model.layers.18.self_attn.k_proj.weight",
+        "model.layers.18.self_attn.v_proj.weight",
+        "model.layers.18.self_attn.o_proj.weight",
+        "model.layers.18.mlp.gate_proj.weight",
+        "model.layers.18.mlp.up_proj.weight",
+        "model.layers.18.mlp.down_proj.weight",
+        "model.layers.19.self_attn.q_proj.weight",
+        "model.layers.19.self_attn.k_proj.weight",
+        "model.layers.19.self_attn.v_proj.weight",
+        "model.layers.19.self_attn.o_proj.weight",
+        "model.layers.19.mlp.gate_proj.weight",
+        "model.layers.19.mlp.up_proj.weight",
+        "model.layers.19.mlp.down_proj.weight",
+        "model.layers.20.self_attn.q_proj.weight",
+        "model.layers.20.self_attn.k_proj.weight",
+        "model.layers.20.self_attn.v_proj.weight",
+        "model.layers.20.self_attn.o_proj.weight",
+        "model.layers.20.mlp.gate_proj.weight",
+        "model.layers.20.mlp.up_proj.weight",
+        "model.layers.20.mlp.down_proj.weight",
+        "model.layers.21.self_attn.q_proj.weight",
+        "model.layers.21.self_attn.k_proj.weight",
+        "model.layers.21.self_attn.v_proj.weight",
+        "model.layers.21.self_attn.o_proj.weight",
+        "model.layers.21.mlp.gate_proj.weight",
+        "model.layers.21.mlp.up_proj.weight",
+        "model.layers.21.mlp.down_proj.weight",
+        "model.layers.22.self_attn.q_proj.weight",
+        "model.layers.22.self_attn.k_proj.weight",
+        "model.layers.22.self_attn.v_proj.weight",
+        "model.layers.22.self_attn.o_proj.weight",
+        "model.layers.22.mlp.gate_proj.weight",
+        "model.layers.22.mlp.up_proj.weight",
+        "model.layers.22.mlp.down_proj.weight",
+        "model.layers.23.self_attn.q_proj.weight",
+        "model.layers.23.self_attn.k_proj.weight",
+        "model.layers.23.self_attn.v_proj.weight",
+        "model.layers.23.self_attn.o_proj.weight",
+        "model.layers.23.mlp.gate_proj.weight",
+        "model.layers.23.mlp.up_proj.weight",
+        "model.layers.23.mlp.down_proj.weight"
+      ]
+    },
+    "adamw": {
+      "parameter_tensors": 122,
+      "parameter_count": 136206208,
+      "names": [
+        "model.embed_tokens.weight",
+        "model.layers.0.self_attn.q_proj.bias",
+        "model.layers.0.self_attn.k_proj.bias",
+        "model.layers.0.self_attn.v_proj.bias",
+        "model.layers.0.input_layernorm.weight",
+        "model.layers.0.post_attention_layernorm.weight",
+        "model.layers.1.self_attn.q_proj.bias",
+        "model.layers.1.self_attn.k_proj.bias",
+        "model.layers.1.self_attn.v_proj.bias",
+        "model.layers.1.input_layernorm.weight",
+        "model.layers.1.post_attention_layernorm.weight",
+        "model.layers.2.self_attn.q_proj.bias",
+        "model.layers.2.self_attn.k_proj.bias",
+        "model.layers.2.self_attn.v_proj.bias",
+        "model.layers.2.input_layernorm.weight",
+        "model.layers.2.post_attention_layernorm.weight",
+        "model.layers.3.self_attn.q_proj.bias",
+        "model.layers.3.self_attn.k_proj.bias",
+        "model.layers.3.self_attn.v_proj.bias",
+        "model.layers.3.input_layernorm.weight",
+        "model.layers.3.post_attention_layernorm.weight",
+        "model.layers.4.self_attn.q_proj.bias",
+        "model.layers.4.self_attn.k_proj.bias",
+        "model.layers.4.self_attn.v_proj.bias",
+        "model.layers.4.input_layernorm.weight",
+        "model.layers.4.post_attention_layernorm.weight",
+        "model.layers.5.self_attn.q_proj.bias",
+        "model.layers.5.self_attn.k_proj.bias",
+        "model.layers.5.self_attn.v_proj.bias",
+        "model.layers.5.input_layernorm.weight",
+        "model.layers.5.post_attention_layernorm.weight",
+        "model.layers.6.self_attn.q_proj.bias",
+        "model.layers.6.self_attn.k_proj.bias",
+        "model.layers.6.self_attn.v_proj.bias",
+        "model.layers.6.input_layernorm.weight",
+        "model.layers.6.post_attention_layernorm.weight",
+        "model.layers.7.self_attn.q_proj.bias",
+        "model.layers.7.self_attn.k_proj.bias",
+        "model.layers.7.self_attn.v_proj.bias",
+        "model.layers.7.input_layernorm.weight",
+        "model.layers.7.post_attention_layernorm.weight",
+        "model.layers.8.self_attn.q_proj.bias",
+        "model.layers.8.self_attn.k_proj.bias",
+        "model.layers.8.self_attn.v_proj.bias",
+        "model.layers.8.input_layernorm.weight",
+        "model.layers.8.post_attention_layernorm.weight",
+        "model.layers.9.self_attn.q_proj.bias",
+        "model.layers.9.self_attn.k_proj.bias",
+        "model.layers.9.self_attn.v_proj.bias",
+        "model.layers.9.input_layernorm.weight",
+        "model.layers.9.post_attention_layernorm.weight",
+        "model.layers.10.self_attn.q_proj.bias",
+        "model.layers.10.self_attn.k_proj.bias",
+        "model.layers.10.self_attn.v_proj.bias",
+        "model.layers.10.input_layernorm.weight",
+        "model.layers.10.post_attention_layernorm.weight",
+        "model.layers.11.self_attn.q_proj.bias",
+        "model.layers.11.self_attn.k_proj.bias",
+        "model.layers.11.self_attn.v_proj.bias",
+        "model.layers.11.input_layernorm.weight",
+        "model.layers.11.post_attention_layernorm.weight",
+        "model.layers.12.self_attn.q_proj.bias",
+        "model.layers.12.self_attn.k_proj.bias",
+        "model.layers.12.self_attn.v_proj.bias",
+        "model.layers.12.input_layernorm.weight",
+        "model.layers.12.post_attention_layernorm.weight",
+        "model.layers.13.self_attn.q_proj.bias",
+        "model.layers.13.self_attn.k_proj.bias",
+        "model.layers.13.self_attn.v_proj.bias",
+        "model.layers.13.input_layernorm.weight",
+        "model.layers.13.post_attention_layernorm.weight",
+        "model.layers.14.self_attn.q_proj.bias",
+        "model.layers.14.self_attn.k_proj.bias",
+        "model.layers.14.self_attn.v_proj.bias",
+        "model.layers.14.input_layernorm.weight",
+        "model.layers.14.post_attention_layernorm.weight",
+        "model.layers.15.self_attn.q_proj.bias",
+        "model.layers.15.self_attn.k_proj.bias",
+        "model.layers.15.self_attn.v_proj.bias",
+        "model.layers.15.input_layernorm.weight",
+        "model.layers.15.post_attention_layernorm.weight",
+        "model.layers.16.self_attn.q_proj.bias",
+        "model.layers.16.self_attn.k_proj.bias",
+        "model.layers.16.self_attn.v_proj.bias",
+        "model.layers.16.input_layernorm.weight",
+        "model.layers.16.post_attention_layernorm.weight",
+        "model.layers.17.self_attn.q_proj.bias",
+        "model.layers.17.self_attn.k_proj.bias",
+        "model.layers.17.self_attn.v_proj.bias",
+        "model.layers.17.input_layernorm.weight",
+        "model.layers.17.post_attention_layernorm.weight",
+        "model.layers.18.self_attn.q_proj.bias",
+        "model.layers.18.self_attn.k_proj.bias",
+        "model.layers.18.self_attn.v_proj.bias",
+        "model.layers.18.input_layernorm.weight",
+        "model.layers.18.post_attention_layernorm.weight",
+        "model.layers.19.self_attn.q_proj.bias",
+        "model.layers.19.self_attn.k_proj.bias",
+        "model.layers.19.self_attn.v_proj.bias",
+        "model.layers.19.input_layernorm.weight",
+        "model.layers.19.post_attention_layernorm.weight",
+        "model.layers.20.self_attn.q_proj.bias",
+        "model.layers.20.self_attn.k_proj.bias",
+        "model.layers.20.self_attn.v_proj.bias",
+        "model.layers.20.input_layernorm.weight",
+        "model.layers.20.post_attention_layernorm.weight",
+        "model.layers.21.self_attn.q_proj.bias",
+        "model.layers.21.self_attn.k_proj.bias",
+        "model.layers.21.self_attn.v_proj.bias",
+        "model.layers.21.input_layernorm.weight",
+        "model.layers.21.post_attention_layernorm.weight",
+        "model.layers.22.self_attn.q_proj.bias",
+        "model.layers.22.self_attn.k_proj.bias",
+        "model.layers.22.self_attn.v_proj.bias",
+        "model.layers.22.input_layernorm.weight",
+        "model.layers.22.post_attention_layernorm.weight",
+        "model.layers.23.self_attn.q_proj.bias",
+        "model.layers.23.self_attn.k_proj.bias",
+        "model.layers.23.self_attn.v_proj.bias",
+        "model.layers.23.input_layernorm.weight",
+        "model.layers.23.post_attention_layernorm.weight",
+        "model.norm.weight"
+      ]
+    }
+  },
+  "state_cache": [],
+  "configuration": {
+    "muon": {
+      "lr": 1e-05,
+      "momentum": 0.95,
+      "nesterov": true,
+      "eps": 1e-07,
+      "ns_steps": 5,
+      "adjust_lr_fn": "match_rms_adamw",
+      "weight_decay": 0
+    },
+    "adamw": {
+      "lr": 1e-05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0
+    }
+  },
+  "scope": "one selected diagnostic configuration; no RL, generation or optimizer-quality claim"
+}

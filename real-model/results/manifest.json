@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "parameter_count": 494032768,
+  "tied_embeddings": true,
+  "torch": "2.11.0+cu130",
+  "transformers": "5.8.1",
+  "liger": "0.8.5",
+  "triton": "3.6.0",
+  "prefix_count": 8,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "master_dtype": "float32, loaded from a BF16 checkpoint",
+  "autocast_dtype": "bfloat16",
+  "attention": "eager",
+  "use_cache": false,
+  "dropout": "model.eval()",
+  "weight_decay": 0,
+  "loss_autocast": "disabled for logits-only CE; explicit operand dtype; enabled inside fused projection",
+  "hard_methods": [
+    "pt_fp32",
+    "pt_native",
+    "stable_fp32",
+    "liger_native",
+    "liger_fp32",
+    "pt_fp32_chunk1",
+    "liger_flce",
+    "ctrl_keep",
+    "ctrl_logits_round",
+    "ctrl_hidden_round",
+    "ctrl_weight_round"
+  ],
+  "soft_methods": [
+    "self_pt_native",
+    "self_pt_fp32",
+    "self_stable_fp32"
+  ],
+  "scope": "same-prefix numerical one-step study, no RL or generation",
+  "actual_optimizer_steps": 28
+}

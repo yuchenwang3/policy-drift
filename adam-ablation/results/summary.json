@@ -1,0 +1,3360 @@
+{
+  "status": "complete",
+  "actual_optimizer_steps": 184,
+  "warmup_optimizer_steps": 128,
+  "new_paired_probe_steps": 56,
+  "factorial_rows": 32,
+  "new_factorial_rows": 28,
+  "reused_factorial_rows": 4,
+  "unique_reused_fresh_comparisons": 2,
+  "cases": {
+    "original-transition": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ],
+          "decoded_text": "{\"tool\": \""
+        }
+      ],
+      "width": 4,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "smallest-descendant": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    }
+  },
+  "results": [
+    {
+      "label": "original-transition-initial-fresh",
+      "warmup_steps": 0,
+      "state_kind": "factorial-counterfactual",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.03435049448554881,
+        "changed_parameter_coordinates": 456648134,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 5.043520611628661,
+        "kl_max": 5.043520611628661,
+        "kl_per_prefix": [
+          5.043520611628661
+        ],
+        "different_logits": 151744,
+        "argmax_different_prefixes": 1
+      },
+      "native_minus_zero_update_l2": 0.03435049448554881,
+      "native_minus_zero_changed_parameter_coordinates": 456648134,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 5.043520611628661,
+        "kl_max": 5.043520611628661,
+        "kl_per_prefix": [
+          5.043520611628661
+        ],
+        "different_logits": 151744,
+        "argmax_different_prefixes": 1
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      },
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m0-v0-t0",
+      "execution": "reused-existing",
+      "source_comparison": "original-transition-initial-fresh",
+      "source_results": "minimization/results"
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m0-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.0077062598439093565,
+        "changed_parameter_coordinates": 373159274,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 4.136004636011807,
+        "kl_max": 4.136004636011807,
+        "different_logits": 151734,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 0.0077062598439093565,
+      "native_minus_zero_changed_parameter_coordinates": 373159274,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 4.136004636011807,
+        "kl_max": 4.136004636011807,
+        "different_logits": 151734,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m0-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 4.445856514590464e-06,
+        "changed_parameter_coordinates": 32420687,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 4.445856514590464e-06,
+      "native_minus_zero_changed_parameter_coordinates": 32420687,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m0-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 6.24778455030615e-07,
+        "changed_parameter_coordinates": 9698482,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 6.24778455030615e-07,
+      "native_minus_zero_changed_parameter_coordinates": 9698482,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m1-v0-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 107693.13429602295,
+        "changed_parameter_coordinates": 494025844,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 374265.22542286594,
+        "kl_max": 374265.22542286594,
+        "different_logits": 151806,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 56663.30352945516,
+        "changed_parameter_coordinates": 494025848,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 388674.26327190036,
+        "kl_max": 388674.26327190036,
+        "different_logits": 151887,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_minus_zero_update_l2": 82932.23441943835,
+      "native_minus_zero_changed_parameter_coordinates": 468030638,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 24576.0,
+        "kl_max": 24576.0,
+        "different_logits": 151802,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m1-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 12924.807717354453,
+        "changed_parameter_coordinates": 493969411,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 33970.44214863411,
+        "kl_max": 33970.44214863411,
+        "different_logits": 151804,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          14172
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "tool"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 7774.439414639434,
+        "changed_parameter_coordinates": 493969451,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 11615.08817848378,
+        "kl_max": 11615.08817848378,
+        "different_logits": 151900,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          12095
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          " Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_minus_zero_update_l2": 8857.504278708648,
+      "native_minus_zero_changed_parameter_coordinates": 414270379,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 11833.0,
+        "kl_max": 11833.0,
+        "different_logits": 151918,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          14172
+        ],
+        "after_argmax_ids": [
+          12095
+        ],
+        "before_argmax_text": [
+          "tool"
+        ],
+        "after_argmax_text": [
+          " Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m1-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.06030709195024779,
+        "changed_parameter_coordinates": 493988827,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.11424198416742455,
+        "kl_max": 0.11424198416742455,
+        "different_logits": 150874,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          1254
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "http"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.06030746334099475,
+        "changed_parameter_coordinates": 493988830,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.10954663163945012,
+        "kl_max": 0.10954663163945012,
+        "different_logits": 150862,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          14172
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "tool"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 6.163829769046246e-06,
+      "native_minus_zero_changed_parameter_coordinates": 42887187,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.000554412556080654,
+        "kl_max": 0.000554412556080654,
+        "different_logits": 126235,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          1254
+        ],
+        "after_argmax_ids": [
+          14172
+        ],
+        "before_argmax_text": [
+          "http"
+        ],
+        "after_argmax_text": [
+          "tool"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m1-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.028461360156740684,
+        "changed_parameter_coordinates": 493894688,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.09743978228251403,
+        "kl_max": 0.09743978228251403,
+        "different_logits": 150904,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.02846143619807654,
+        "changed_parameter_coordinates": 493894759,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.09743978228515793,
+        "kl_max": 0.09743978228515793,
+        "different_logits": 150904,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 2.858418265177311e-06,
+      "native_minus_zero_changed_parameter_coordinates": 18571069,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 1.9833316828417573e-15,
+        "kl_max": 1.9833316828417573e-15,
+        "different_logits": 2,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-initial-fresh",
+      "warmup_steps": 0,
+      "state_kind": "factorial-counterfactual",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.011803106614928248,
+        "changed_parameter_coordinates": 439700353,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 1.4667464150548053,
+        "kl_max": 1.4667464150548053,
+        "kl_per_prefix": [
+          1.4667464150548053
+        ],
+        "different_logits": 151602,
+        "argmax_different_prefixes": 1
+      },
+      "native_minus_zero_update_l2": 0.011803106614928248,
+      "native_minus_zero_changed_parameter_coordinates": 439700353,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 1.4667464150548053,
+        "kl_max": 1.4667464150548053,
+        "kl_per_prefix": [
+          1.4667464150548053
+        ],
+        "different_logits": 151602,
+        "argmax_different_prefixes": 1
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      },
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m0-v0-t0",
+      "execution": "reused-existing",
+      "source_comparison": "smallest-descendant-initial-fresh",
+      "source_results": "minimization/results"
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m0-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.0020615099407219695,
+        "changed_parameter_coordinates": 337952928,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.018916477735510365,
+        "kl_max": 0.018916477735510365,
+        "different_logits": 149530,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 0.0020615099407219695,
+      "native_minus_zero_changed_parameter_coordinates": 337952928,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.018916477735510365,
+        "kl_max": 0.018916477735510365,
+        "different_logits": 149530,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m0-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 7.331481942005352e-06,
+        "changed_parameter_coordinates": 32449729,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 7.331481942005352e-06,
+      "native_minus_zero_changed_parameter_coordinates": 32449729,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m0-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 1.4361993094500536e-06,
+        "changed_parameter_coordinates": 10461903,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 1.4361993094500536e-06,
+      "native_minus_zero_changed_parameter_coordinates": 10461903,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m1-v0-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 107693.13429602295,
+        "changed_parameter_coordinates": 494025844,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 329758.107616151,
+        "kl_max": 329758.107616151,
+        "different_logits": 151804,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 66411.59978337241,
+        "changed_parameter_coordinates": 494025808,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 19398.447062041923,
+        "kl_max": 19398.447062041923,
+        "different_logits": 151776,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          2130
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "____"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_minus_zero_update_l2": 73477.06675672105,
+      "native_minus_zero_changed_parameter_coordinates": 467190483,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 451456.0,
+        "kl_max": 451456.0,
+        "different_logits": 151725,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          2130
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "____"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m1-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 12924.807717354453,
+        "changed_parameter_coordinates": 493969411,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 33293.80298869891,
+        "kl_max": 33293.80298869891,
+        "different_logits": 151776,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          4913
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "{\""
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 8998.49118258368,
+        "changed_parameter_coordinates": 493969457,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 8036.59509229146,
+        "kl_max": 8036.59509229146,
+        "different_logits": 151802,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          14172
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "tool"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_minus_zero_update_l2": 7416.479693703829,
+      "native_minus_zero_changed_parameter_coordinates": 412981358,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 6048.0,
+        "kl_max": 6048.0,
+        "different_logits": 151576,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          4913
+        ],
+        "after_argmax_ids": [
+          14172
+        ],
+        "before_argmax_text": [
+          "{\""
+        ],
+        "after_argmax_text": [
+          "tool"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m1-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.06030709195024779,
+        "changed_parameter_coordinates": 493988827,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.014499377408200304,
+        "kl_max": 0.014499377408200304,
+        "different_logits": 148608,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.06030720673165143,
+        "changed_parameter_coordinates": 493988785,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.017483602579510222,
+        "kl_max": 0.017483602579510222,
+        "different_logits": 147885,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 8.311355293535929e-06,
+      "native_minus_zero_changed_parameter_coordinates": 40172058,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0010029747723816385,
+        "kl_max": 0.0010029747723816385,
+        "different_logits": 143981,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m1-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 16,
+      "adam_step_used": 17,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.028461360156740684,
+        "changed_parameter_coordinates": 493894688,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.021419819305300784,
+        "kl_max": 0.021419819305300784,
+        "different_logits": 149162,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.028461384395866283,
+        "changed_parameter_coordinates": 493894680,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.021419819305300784,
+        "kl_max": 0.021419819305300784,
+        "different_logits": 149162,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 3.1096949953028602e-06,
+      "native_minus_zero_changed_parameter_coordinates": 17825897,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          8226
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "kit"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "original-transition-initial-fresh",
+      "warmup_steps": 0,
+      "state_kind": "factorial-counterfactual",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.03435049448554881,
+        "changed_parameter_coordinates": 456648134,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 5.043520611628661,
+        "kl_max": 5.043520611628661,
+        "kl_per_prefix": [
+          5.043520611628661
+        ],
+        "different_logits": 151744,
+        "argmax_different_prefixes": 1
+      },
+      "native_minus_zero_update_l2": 0.03435049448554881,
+      "native_minus_zero_changed_parameter_coordinates": 456648134,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 5.043520611628661,
+        "kl_max": 5.043520611628661,
+        "kl_per_prefix": [
+          5.043520611628661
+        ],
+        "different_logits": 151744,
+        "argmax_different_prefixes": 1
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      },
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m0-v0-t0",
+      "execution": "reused-existing",
+      "source_comparison": "original-transition-initial-fresh",
+      "source_results": "minimization/results"
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m0-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.008839626900179094,
+        "changed_parameter_coordinates": 366291616,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 6.13145824242679,
+        "kl_max": 6.13145824242679,
+        "different_logits": 151756,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 0.008839626900179094,
+      "native_minus_zero_changed_parameter_coordinates": 366291616,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 6.13145824242679,
+        "kl_max": 6.13145824242679,
+        "different_logits": 151756,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m0-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 4.577572445970491e-06,
+        "changed_parameter_coordinates": 33274578,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 4.577572445970491e-06,
+      "native_minus_zero_changed_parameter_coordinates": 33274578,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m0-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 8.362194835408801e-07,
+        "changed_parameter_coordinates": 12392698,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 8.362194835408801e-07,
+      "native_minus_zero_changed_parameter_coordinates": 12392698,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m1-v0-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 50.922382646433725,
+        "changed_parameter_coordinates": 462786782,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 82.28019047954895,
+        "kl_max": 82.28019047954895,
+        "different_logits": 151832,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 24.356229010318508,
+        "changed_parameter_coordinates": 477927929,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 905.878054161958,
+        "kl_max": 905.878054161958,
+        "different_logits": 151927,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_minus_zero_update_l2": 41.800244221193175,
+      "native_minus_zero_changed_parameter_coordinates": 460515300,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 6.6096579519550426e-21,
+        "kl_max": 6.6096579519550426e-21,
+        "different_logits": 151924,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          59604
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Paris"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m1-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 5.092244732078131,
+        "changed_parameter_coordinates": 421248898,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 94.59030124576144,
+        "kl_max": 94.59030124576144,
+        "different_logits": 151904,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 3.0338378060806557,
+        "changed_parameter_coordinates": 428339473,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 78.88090418838821,
+        "kl_max": 78.88090418838821,
+        "different_logits": 151867,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 3.219472372133954,
+      "native_minus_zero_changed_parameter_coordinates": 373750178,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 4.0811250967064933e-22,
+        "kl_max": 4.0811250967064933e-22,
+        "different_logits": 151576,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          59604
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Paris"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m1-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0005062285762492129,
+        "changed_parameter_coordinates": 287479717,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 1.4252631572602896e-12,
+        "kl_max": 1.4252631572602896e-12,
+        "different_logits": 2,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.0005062385516811363,
+        "changed_parameter_coordinates": 299208881,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 1.4252631572602896e-12,
+        "kl_max": 1.4252631572602896e-12,
+        "different_logits": 2,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 5.602116349843642e-06,
+      "native_minus_zero_changed_parameter_coordinates": 40985687,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m1-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0002849312721767541,
+        "changed_parameter_coordinates": 279023808,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 2.887381313374183e-14,
+        "kl_max": 2.887381313374183e-14,
+        "different_logits": 1,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.00028493218466319,
+        "changed_parameter_coordinates": 283442834,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 2.887381313374183e-14,
+        "kl_max": 2.887381313374183e-14,
+        "different_logits": 1,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 2.2312289883770627e-06,
+      "native_minus_zero_changed_parameter_coordinates": 19517612,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-initial-fresh",
+      "warmup_steps": 0,
+      "state_kind": "factorial-counterfactual",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.011803106614928248,
+        "changed_parameter_coordinates": 439700353,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 1.4667464150548053,
+        "kl_max": 1.4667464150548053,
+        "kl_per_prefix": [
+          1.4667464150548053
+        ],
+        "different_logits": 151602,
+        "argmax_different_prefixes": 1
+      },
+      "native_minus_zero_update_l2": 0.011803106614928248,
+      "native_minus_zero_changed_parameter_coordinates": 439700353,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 1.4667464150548053,
+        "kl_max": 1.4667464150548053,
+        "kl_per_prefix": [
+          1.4667464150548053
+        ],
+        "different_logits": 151602,
+        "argmax_different_prefixes": 1
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      },
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m0-v0-t0",
+      "execution": "reused-existing",
+      "source_comparison": "smallest-descendant-initial-fresh",
+      "source_results": "minimization/results"
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m0-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.0020835329758310617,
+        "changed_parameter_coordinates": 328972763,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.9378191631762622,
+        "kl_max": 0.9378191631762622,
+        "different_logits": 151545,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 0.0020835329758310617,
+      "native_minus_zero_changed_parameter_coordinates": 328972763,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.9378191631762622,
+        "kl_max": 0.9378191631762622,
+        "different_logits": 151545,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m0-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 7.5286025715331745e-06,
+        "changed_parameter_coordinates": 33169024,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 7.5286025715331745e-06,
+      "native_minus_zero_changed_parameter_coordinates": 33169024,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": false,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m0-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 1.7424412604247343e-06,
+        "changed_parameter_coordinates": 12438839,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 1.7424412604247343e-06,
+      "native_minus_zero_changed_parameter_coordinates": 12438839,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": false,
+      "configuration": "m1-v0-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 50.922382646433725,
+        "changed_parameter_coordinates": 462786782,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 117.36674738130691,
+        "kl_max": 117.36674738130691,
+        "different_logits": 151833,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 25.601091151072556,
+        "changed_parameter_coordinates": 476428580,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 801.6622528475655,
+        "kl_max": 801.6622528475655,
+        "different_logits": 151920,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "native_minus_zero_update_l2": 41.0637595487219,
+      "native_minus_zero_changed_parameter_coordinates": 450867369,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 5.085975076702237e-34,
+        "kl_max": 5.085975076702237e-34,
+        "different_logits": 151912,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          59604
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Paris"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "direct FP64 log-probability KL for large displacement"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": false,
+      "keep_step": true,
+      "configuration": "m1-v0-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 5.092244732078131,
+        "changed_parameter_coordinates": 421248898,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 58.67067668904945,
+        "kl_max": 58.67067668904945,
+        "different_logits": 151908,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 3.142221310752174,
+        "changed_parameter_coordinates": 427439475,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 53.572963731164286,
+        "kl_max": 53.572963731164286,
+        "different_logits": 151813,
+        "argmax_different_prefixes": 1,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 3.1442773870240948,
+      "native_minus_zero_changed_parameter_coordinates": 344313610,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 3.157545518723181e-08,
+        "kl_max": 3.157545518723181e-08,
+        "different_logits": 151808,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          59604
+        ],
+        "after_argmax_ids": [
+          59604
+        ],
+        "before_argmax_text": [
+          "Paris"
+        ],
+        "after_argmax_text": [
+          "Paris"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": false,
+      "configuration": "m1-v1-t0",
+      "execution": "new-paired-probe",
+      "adam_step_before": 0,
+      "adam_step_used": 1,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0005062285762492129,
+        "changed_parameter_coordinates": 287479717,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 1.1675833837505856e-13,
+        "kl_max": 1.1675833837505856e-13,
+        "different_logits": 6,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.000506332952706371,
+        "changed_parameter_coordinates": 298801932,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 1.1675833837505856e-13,
+        "kl_max": 1.1675833837505856e-13,
+        "different_logits": 6,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 8.112794065048678e-06,
+      "native_minus_zero_changed_parameter_coordinates": 38690962,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "keep_m": true,
+      "keep_v": true,
+      "keep_step": true,
+      "configuration": "m1-v1-t1",
+      "execution": "new-paired-probe",
+      "adam_step_before": 128,
+      "adam_step_used": 129,
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0002849312721767541,
+        "changed_parameter_coordinates": 279023808,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 4.578052220245103e-15,
+        "kl_max": 4.578052220245103e-15,
+        "different_logits": 3,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.00028494763752723583,
+        "changed_parameter_coordinates": 283661647,
+        "finite_update_norm": true,
+        "finite_logits": true,
+        "kl_mean": 4.578052220245103e-15,
+        "kl_max": 4.578052220245103e-15,
+        "different_logits": 3,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "native_minus_zero_update_l2": 2.6211201335992308e-06,
+      "native_minus_zero_changed_parameter_coordinates": 17519616,
+      "native_vs_zero_policy": {
+        "finite_logits": true,
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "different_logits": 0,
+        "argmax_different_prefixes": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "kl_calculation": "centered expm1/log1p, small-delta series"
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    }
+  ],
+  "state_cache": [],
+  "denominator_diagnostics": [
+    {
+      "case_label": "original-transition",
+      "warmup_step": 16,
+      "nonzero_residual_coordinates": 494032582,
+      "nonzero_residual_below_epsilon": 479442250,
+      "history_v_dominates_new_v_coordinates": 494032582,
+      "history_v_dominates_residual_gradient_energy_fraction": 1.0
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 16,
+      "nonzero_residual_coordinates": 494028946,
+      "nonzero_residual_below_epsilon": 493298943,
+      "history_v_dominates_new_v_coordinates": 494028946,
+      "history_v_dominates_residual_gradient_energy_fraction": 1.0
+    },
+    {
+      "case_label": "original-transition",
+      "warmup_step": 128,
+      "nonzero_residual_coordinates": 494032582,
+      "nonzero_residual_below_epsilon": 479442250,
+      "history_v_dominates_new_v_coordinates": 494032582,
+      "history_v_dominates_residual_gradient_energy_fraction": 1.0
+    },
+    {
+      "case_label": "smallest-descendant",
+      "warmup_step": 128,
+      "nonzero_residual_coordinates": 494028946,
+      "nonzero_residual_below_epsilon": 493298943,
+      "history_v_dominates_new_v_coordinates": 494028946,
+      "history_v_dominates_residual_gradient_energy_fraction": 1.0
+    }
+  ],
+  "zero_m_zero_v_analytic_coefficients": [
+    {
+      "pre_step_count": 0,
+      "update_step": 1,
+      "numerator_coefficient_a": 1.0000000000000002,
+      "absolute_gradient_denominator_coefficient_b": 0.9999999999999996,
+      "effective_epsilon_after_factoring_b": 1.0000000000000005e-08,
+      "large_gradient_step_multiplier_vs_lr": 1.0000000000000007,
+      "small_gradient_slope_multiplier_vs_fresh": 1.0000000000000002
+    },
+    {
+      "pre_step_count": 16,
+      "update_step": 17,
+      "numerator_coefficient_a": 0.12001514355834006,
+      "absolute_gradient_denominator_coefficient_b": 0.2435067352482974,
+      "effective_epsilon_after_factoring_b": 4.1066625897650276e-08,
+      "large_gradient_step_multiplier_vs_lr": 0.4928617002563144,
+      "small_gradient_slope_multiplier_vs_fresh": 0.12001514355834006
+    },
+    {
+      "pre_step_count": 128,
+      "update_step": 129,
+      "numerator_coefficient_a": 0.10000012510776367,
+      "absolute_gradient_denominator_coefficient_b": 0.09087801583972688,
+      "effective_epsilon_after_factoring_b": 1.1003761369125919e-07,
+      "large_gradient_step_multiplier_vs_lr": 1.1003775135685687,
+      "small_gradient_slope_multiplier_vs_fresh": 0.10000012510776367
+    }
+  ],
+  "scope": "original weights only; component-reset counterfactual states; next-token BF16 executed policy; no RL"
+}

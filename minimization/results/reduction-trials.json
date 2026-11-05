@@ -1,0 +1,5257 @@
+[
+  {
+    "trial": 0,
+    "label": "original-batch",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 77,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": true,
+    "same_original_transition": true,
+    "loss": 11.573545455932617,
+    "gradient_l2": 2.878775575918594e-05,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      13253,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      76,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "Auto",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "m",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.1875,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.7198350672152339,
+    "kl_max": 5.680401663830496,
+    "kl_per_prefix": [
+      0.0011552374189524775,
+      0.0004099737218902964,
+      1.0378598722457964e-05,
+      5.680401663830496,
+      0.07350995975483254,
+      0.001282011723441274,
+      0.0017985795448848632,
+      0.00011273312865145851
+    ],
+    "different_logits": 1126810,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.011262169105160527,
+    "changed_parameter_coordinates": 430291821
+  },
+  {
+    "trial": 1,
+    "label": "only-original-trigger",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 4,
+    "width": 26,
+    "target_batch_index": 0,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.527827262878418,
+    "gradient_l2": 7.04516410979908e-05,
+    "before_argmax_ids": [
+      82
+    ],
+    "after_argmax_ids": [
+      2428
+    ],
+    "before_argmax_text": [
+      "s"
+    ],
+    "after_argmax_text": [
+      "https"
+    ],
+    "before_top2_logit_gaps": [
+      0.0
+    ],
+    "kl_mean": 0.5442500417899169,
+    "kl_max": 0.5442500417899169,
+    "kl_per_prefix": [
+      0.5442500417899169
+    ],
+    "different_logits": 151452,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.019666568898680622,
+    "changed_parameter_coordinates": 417616307
+  },
+  {
+    "trial": 2,
+    "label": "delete-batch-row",
+    "case": {
+      "rows": [
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 7,
+    "token_count": 72,
+    "width": 26,
+    "target_batch_index": 2,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.58321762084961,
+    "gradient_l2": 7.052932468308009e-06,
+    "before_argmax_ids": [
+      220,
+      293,
+      82,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      220,
+      293,
+      1254,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " ",
+      " b",
+      "s",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " ",
+      " b",
+      "http",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      3.625,
+      7.0,
+      0.0,
+      0.3125,
+      1.5,
+      0.625,
+      4.9375
+    ],
+    "kl_mean": 0.014135798074482803,
+    "kl_max": 0.09417716281370095,
+    "kl_per_prefix": [
+      0.0003788231174797786,
+      1.1493938448533735e-05,
+      0.09417716281370095,
+      0.0015439329580179651,
+      0.0009742424602374708,
+      0.0015982254625065786,
+      0.00026670577098835205
+    ],
+    "different_logits": 979583,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.003897415375632275,
+    "changed_parameter_coordinates": 419159004
+  },
+  {
+    "trial": 3,
+    "label": "delete-batch-row",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 7,
+    "token_count": 72,
+    "width": 26,
+    "target_batch_index": 2,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.570056915283203,
+    "gradient_l2": 7.0795211797368505e-06,
+    "before_argmax_ids": [
+      12095,
+      293,
+      82,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      293,
+      14172,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " b",
+      "s",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " b",
+      "tool",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      7.0,
+      0.0,
+      0.3125,
+      1.5,
+      0.625,
+      4.9375
+    ],
+    "kl_mean": 0.010546910401860394,
+    "kl_max": 0.06584947165450938,
+    "kl_per_prefix": [
+      0.0023104916846329844,
+      1.6807308389570716e-05,
+      0.06584947165450938,
+      0.002909596095076547,
+      0.001197942516932152,
+      0.0013791194842383133,
+      0.00016494406924382298
+    ],
+    "different_logits": 971568,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.004004438767517532,
+    "changed_parameter_coordinates": 418184364
+  },
+  {
+    "trial": 4,
+    "label": "delete-batch-row",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 7,
+    "token_count": 67,
+    "width": 26,
+    "target_batch_index": 2,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.582539558410645,
+    "gradient_l2": 7.1973556881585825e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      82,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      14172,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      "s",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      "tool",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      0.0,
+      0.3125,
+      1.5,
+      0.625,
+      4.9375
+    ],
+    "kl_mean": 0.03388464558341622,
+    "kl_max": 0.21885678330257033,
+    "kl_per_prefix": [
+      0.0026388029569689815,
+      0.0001613920667536665,
+      0.21885678330257033,
+      0.010950345299817997,
+      0.0011427121950308584,
+      0.0032593912491577864,
+      0.00018309201361392776
+    ],
+    "different_logits": 988616,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.004032971155304372,
+    "changed_parameter_coordinates": 418990625
+  },
+  {
+    "trial": 5,
+    "label": "delete-batch-row",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 7,
+    "token_count": 64,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.563321113586426,
+    "gradient_l2": 5.965293750552511e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      82,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      13253,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "s",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "Auto",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.0,
+      1.5,
+      0.625,
+      4.9375
+    ],
+    "kl_mean": 0.0070352751937671765,
+    "kl_max": 0.04189864209334055,
+    "kl_per_prefix": [
+      0.0021326282715552693,
+      0.0006304408153015246,
+      7.1955860303093116e-06,
+      0.04189864209334055,
+      0.0017989991509411991,
+      0.002490382493063931,
+      0.00028863794613745436
+    ],
+    "different_logits": 977092,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.0032608782439545576,
+    "changed_parameter_coordinates": 414678831
+  },
+  {
+    "trial": 6,
+    "label": "delete-batch-row",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 7,
+    "token_count": 67,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.553242683410645,
+    "gradient_l2": 7.243350430581498e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      82,
+      1313,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      14172,
+      1313,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "s",
+      "type",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "tool",
+      "type",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.0,
+      0.3125,
+      0.625,
+      4.9375
+    ],
+    "kl_mean": 0.01856662147038414,
+    "kl_max": 0.11785923562366044,
+    "kl_per_prefix": [
+      0.0020022492316071642,
+      0.00037690296544648424,
+      9.687657543765858e-06,
+      0.11785923562366044,
+      0.005612344738958747,
+      0.003931795285986715,
+      0.00017413478948568922
+    ],
+    "different_logits": 969949,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.004012809255889879,
+    "changed_parameter_coordinates": 419227047
+  },
+  {
+    "trial": 7,
+    "label": "delete-batch-row",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 7,
+    "token_count": 73,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.589654922485352,
+    "gradient_l2": 6.787310797397461e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      82,
+      1313,
+      11,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      14172,
+      1313,
+      11,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "s",
+      "type",
+      ",",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "tool",
+      "type",
+      ",",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.0,
+      0.3125,
+      1.5,
+      4.9375
+    ],
+    "kl_mean": 0.024221944605856367,
+    "kl_max": 0.1576307266355487,
+    "kl_per_prefix": [
+      0.0005568995735719673,
+      0.00036466716551132724,
+      9.972603643441973e-06,
+      0.1576307266355487,
+      0.009032558010751623,
+      0.001796530098345203,
+      0.00016225815362233578
+    ],
+    "different_logits": 1002897,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.0038977299744158145,
+    "changed_parameter_coordinates": 414676855
+  },
+  {
+    "trial": 8,
+    "label": "delete-batch-row",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 7,
+    "token_count": 51,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.568970680236816,
+    "gradient_l2": 6.2713813864563e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      82,
+      1313,
+      11,
+      2130
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      1254,
+      1313,
+      11,
+      2130
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "s",
+      "type",
+      ",",
+      "____"
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "http",
+      "type",
+      ",",
+      "____"
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.0,
+      0.3125,
+      1.5,
+      0.625
+    ],
+    "kl_mean": 0.02461628072972703,
+    "kl_max": 0.16575449252986763,
+    "kl_per_prefix": [
+      0.0003833017770930425,
+      0.00036136464606529597,
+      9.872830153755811e-06,
+      0.16575449252986763,
+      0.0038132555195197204,
+      0.0010107357307794901,
+      0.0009809420746102883
+    ],
+    "different_logits": 966650,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.003544613530783397,
+    "changed_parameter_coordinates": 410004466
+  },
+  {
+    "trial": 9,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 74,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.575206756591797,
+    "gradient_l2": 1.106186316019224e-05,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      2829,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      2102,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "status",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "title",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.125,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.005565157091787528,
+    "kl_max": 0.03167422855491304,
+    "kl_per_prefix": [
+      0.0005584076399774573,
+      0.0005112046283082385,
+      1.366827938718895e-05,
+      0.03167422855491304,
+      0.007851622448117268,
+      0.0008866538381343285,
+      0.002673615430017753,
+      0.00035185591544495366
+    ],
+    "different_logits": 1121310,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.003021312512191601,
+    "changed_parameter_coordinates": 421524396
+  },
+  {
+    "trial": 10,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 74,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.593935012817383,
+    "gradient_l2": 1.3027437591046099e-05,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      486,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      486,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "::",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "::",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.4375,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0088523324844989,
+    "kl_max": 0.05543672278880803,
+    "kl_per_prefix": [
+      0.0028267967205437648,
+      0.00020361868074288787,
+      1.4077588798326873e-05,
+      0.05543672278880803,
+      0.008450337624055938,
+      0.0012355167041777954,
+      0.002366446618965428,
+      0.00028514314989903174
+    ],
+    "different_logits": 1129234,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002986704396946458,
+    "changed_parameter_coordinates": 422020664
+  },
+  {
+    "trial": 11,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            788
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 74,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.59676742553711,
+    "gradient_l2": 2.2551819725105863e-05,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.875,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0027674218879571227,
+    "kl_max": 0.018007450124865786,
+    "kl_per_prefix": [
+      0.0010777821600532185,
+      0.00020443873968859066,
+      4.949249457356581e-06,
+      0.018007450124865786,
+      0.0008066188938801159,
+      0.0009523964884610083,
+      0.0008828011911088595,
+      0.00020293825614204898
+    ],
+    "different_logits": 1084545,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0031837336586445844,
+    "changed_parameter_coordinates": 424079779
+  },
+  {
+    "trial": 12,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 74,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.597299575805664,
+    "gradient_l2": 2.3892702778772674e-05,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      16,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      16,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "1",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "1",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.4375,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.003819005282953183,
+    "kl_max": 0.020191690912805375,
+    "kl_per_prefix": [
+      0.002761396744565296,
+      0.00021901319517909652,
+      1.0182977498296617e-05,
+      0.020191690912805375,
+      0.0013715193723164963,
+      0.0018592188759094456,
+      0.00397705116067227,
+      0.00016196902467918286
+    ],
+    "different_logits": 1109494,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.003187403108650118,
+    "changed_parameter_coordinates": 423913445
+  },
+  {
+    "trial": 13,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 75,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.592142105102539,
+    "gradient_l2": 6.034261645979617e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      788,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      788,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "\":",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "\":",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.1875,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0025901213133017425,
+    "kl_max": 0.007480466299305389,
+    "kl_per_prefix": [
+      0.0054559560722343345,
+      0.0003775323810421357,
+      2.9866065508115613e-05,
+      0.007480466299305389,
+      0.003377707782907599,
+      0.0014156379173123862,
+      0.0023382777418784182,
+      0.00024552624622556205
+    ],
+    "different_logits": 1115584,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002908316949638206,
+    "changed_parameter_coordinates": 420369008
+  },
+  {
+    "trial": 14,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            788
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 75,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.594659805297852,
+    "gradient_l2": 6.049891760608323e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      1.25,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0028359323207605616,
+    "kl_max": 0.008752428672393314,
+    "kl_per_prefix": [
+      0.0017697230740567177,
+      0.0002148552596577211,
+      5.306304726910532e-07,
+      0.008752428672393314,
+      0.005498626544659952,
+      0.0014642911715999696,
+      0.004371607051872066,
+      0.0006153961613720595
+    ],
+    "different_logits": 1114698,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002958475636719193,
+    "changed_parameter_coordinates": 420029487
+  },
+  {
+    "trial": 15,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 75,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.589082717895508,
+    "gradient_l2": 6.002104272400713e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      307,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      307,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "id",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "id",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.1875,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.006556551225180684,
+    "kl_max": 0.0347337590135429,
+    "kl_per_prefix": [
+      0.004767505752404449,
+      0.0013035927037673405,
+      1.1190999973826968e-05,
+      0.0347337590135429,
+      0.005640771469693983,
+      0.0009562992350305047,
+      0.004783646865172738,
+      0.00025564376185973747
+    ],
+    "different_logits": 1119288,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002946084737921036,
+    "changed_parameter_coordinates": 420234023
+  },
+  {
+    "trial": 16,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172,
+            788
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 75,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.589315414428711,
+    "gradient_l2": 6.194305345746558e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      1.5625,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0022191084029876,
+    "kl_max": 0.006257698991448074,
+    "kl_per_prefix": [
+      0.00227809201501103,
+      0.0002905288575199273,
+      1.0054189852447933e-05,
+      0.0019267880169309185,
+      0.005986557273193056,
+      0.000707085313286047,
+      0.006257698991448074,
+      0.000296062566659298
+    ],
+    "different_logits": 1123687,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002928199634330486,
+    "changed_parameter_coordinates": 420766431
+  },
+  {
+    "trial": 17,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 75,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.586065292358398,
+    "gradient_l2": 6.2889544172046774e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      1944,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      1944,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "test",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "test",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.6875,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0011757782521405352,
+    "kl_max": 0.0026031388383547416,
+    "kl_per_prefix": [
+      0.0006599710560248344,
+      0.0003641843553653493,
+      1.6240803351513473e-05,
+      0.0026031388383547416,
+      0.0012687574504001641,
+      0.002198978581614414,
+      0.001877212061954858,
+      0.0004177428700584063
+    ],
+    "different_logits": 1102217,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0032200529398606014,
+    "changed_parameter_coordinates": 423085953
+  },
+  {
+    "trial": 18,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 75,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.592744827270508,
+    "gradient_l2": 5.918885820537817e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      16,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      16,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "1",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "1",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.3125,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.00101988541641133,
+    "kl_max": 0.002506947822021751,
+    "kl_per_prefix": [
+      0.001496950924885752,
+      0.0006027956598857139,
+      1.1499225125319433e-05,
+      0.0004999579678102317,
+      0.002506947822021751,
+      0.0011434379725421657,
+      0.0016942462479627202,
+      0.000203247511056986
+    ],
+    "different_logits": 1094155,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0028775755118257097,
+    "changed_parameter_coordinates": 419890973
+  },
+  {
+    "trial": 19,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 76,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.590075492858887,
+    "gradient_l2": 9.864812424060984e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.125,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0039095345419113935,
+    "kl_max": 0.020415444876148315,
+    "kl_per_prefix": [
+      0.0026851840308551134,
+      0.0007550682935900801,
+      1.0175577757226464e-05,
+      0.020415444876148315,
+      0.0018767877069840139,
+      0.0019169736171526055,
+      0.003427260663065568,
+      0.00018938156973822336
+    ],
+    "different_logits": 1117550,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0048309802997092595,
+    "changed_parameter_coordinates": 426771691
+  },
+  {
+    "trial": 20,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 76,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.594758987426758,
+    "gradient_l2": 7.903285034062554e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      330,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      " \"",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      1.0625,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.004019390580408982,
+    "kl_max": 0.018918861233673267,
+    "kl_per_prefix": [
+      0.0048456430611797125,
+      0.00040716087254033447,
+      4.028183787365442e-06,
+      0.018918861233673267,
+      0.0030026140741214835,
+      0.0012974785923261587,
+      0.003493982773618178,
+      0.00018535585202535481
+    ],
+    "different_logits": 1112142,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.004090729134246014,
+    "changed_parameter_coordinates": 422393064
+  },
+  {
+    "trial": 21,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 76,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.596847534179688,
+    "gradient_l2": 5.89108508126537e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      785,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      785,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "The",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "The",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      0.25,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0024166291974775387,
+    "kl_max": 0.006406118217157252,
+    "kl_per_prefix": [
+      0.001888066501255116,
+      0.0003864615926651427,
+      4.430757028485462e-06,
+      0.0040764648057451175,
+      0.006406118217157252,
+      0.001475090939233249,
+      0.004981122633153241,
+      0.00011527813358270465
+    ],
+    "different_logits": 1122608,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0028782726947590882,
+    "changed_parameter_coordinates": 419869357
+  },
+  {
+    "trial": 22,
+    "label": "enumerate-trigger-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 0,
+          "family": "text",
+          "input_ids": [
+            785,
+            6722,
+            315,
+            9625,
+            374
+          ]
+        },
+        {
+          "origin": 1,
+          "family": "math",
+          "input_ids": [
+            17,
+            488,
+            220,
+            17,
+            284
+          ]
+        },
+        {
+          "origin": 2,
+          "family": "code",
+          "input_ids": [
+            750,
+            912,
+            2877,
+            11,
+            293,
+            982,
+            262,
+            470,
+            264,
+            488
+          ]
+        },
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 4,
+          "family": "tool_argument",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330,
+            1836,
+            497,
+            330,
+            16370,
+            788,
+            5212,
+            1631,
+            788,
+            330
+          ]
+        },
+        {
+          "origin": 5,
+          "family": "json_boundary",
+          "input_ids": [
+            4913,
+            562,
+            788,
+            830,
+            11,
+            330,
+            1830,
+            788,
+            220,
+            18
+          ]
+        },
+        {
+          "origin": 6,
+          "family": "chinese",
+          "input_ids": [
+            104328,
+            9370,
+            59975,
+            100132
+          ]
+        },
+        {
+          "origin": 7,
+          "family": "sequence",
+          "input_ids": [
+            16,
+            11,
+            220,
+            17,
+            11,
+            220,
+            18,
+            11,
+            220,
+            19,
+            11,
+            220,
+            20,
+            11,
+            220,
+            21,
+            11,
+            220,
+            22,
+            11,
+            220,
+            23,
+            11,
+            220,
+            24,
+            11
+          ]
+        }
+      ],
+      "width": 26,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 8,
+    "token_count": 76,
+    "width": 26,
+    "target_batch_index": 3,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.579463005065918,
+    "gradient_l2": 6.079622107725844e-06,
+    "before_argmax_ids": [
+      12095,
+      220,
+      293,
+      28648,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "after_argmax_ids": [
+      12095,
+      220,
+      293,
+      28648,
+      1313,
+      11,
+      2130,
+      220
+    ],
+    "before_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "docker",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "after_argmax_text": [
+      " Paris",
+      " ",
+      " b",
+      "docker",
+      "type",
+      ",",
+      "____",
+      " "
+    ],
+    "before_top2_logit_gaps": [
+      1.0,
+      3.625,
+      7.0,
+      1.0625,
+      0.375,
+      1.5,
+      0.625,
+      5.1875
+    ],
+    "kl_mean": 0.0015205250470897167,
+    "kl_max": 0.0035388210313560824,
+    "kl_per_prefix": [
+      0.0021250381870511234,
+      0.00030073592339617544,
+      1.0132477605474377e-05,
+      0.00152851570799536,
+      0.0025389053942237658,
+      0.00194112647513132,
+      0.0035388210313560824,
+      0.00018092517995842988
+    ],
+    "different_logits": 1095600,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0030395748211538565,
+    "changed_parameter_coordinates": 424082312
+  },
+  {
+    "trial": 23,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913
+          ]
+        }
+      ],
+      "width": 1,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 1,
+    "width": 1,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.540060043334961,
+    "gradient_l2": 4.729991386918669e-05,
+    "before_argmax_ids": [
+      2829
+    ],
+    "after_argmax_ids": [
+      2829
+    ],
+    "before_argmax_text": [
+      "status"
+    ],
+    "after_argmax_text": [
+      "status"
+    ],
+    "before_top2_logit_gaps": [
+      0.0625
+    ],
+    "kl_mean": 0.18138808000775386,
+    "kl_max": 0.18138808000775386,
+    "kl_per_prefix": [
+      0.18138808000775386
+    ],
+    "different_logits": 151896,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0034395532402642535,
+    "changed_parameter_coordinates": 296280657
+  },
+  {
+    "trial": 24,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172
+          ]
+        }
+      ],
+      "width": 1,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 1,
+    "width": 1,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.68980598449707,
+    "gradient_l2": 7.149431136833993e-05,
+    "before_argmax_ids": [
+      486
+    ],
+    "after_argmax_ids": [
+      486
+    ],
+    "before_argmax_text": [
+      "::"
+    ],
+    "after_argmax_text": [
+      "::"
+    ],
+    "before_top2_logit_gaps": [
+      0.4375
+    ],
+    "kl_mean": 0.08577591621262537,
+    "kl_max": 0.08577591621262537,
+    "kl_per_prefix": [
+      0.08577591621262537
+    ],
+    "different_logits": 151907,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.003507733796835516,
+    "changed_parameter_coordinates": 324054303
+  },
+  {
+    "trial": 25,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            788
+          ]
+        }
+      ],
+      "width": 1,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 1,
+    "width": 1,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.713383674621582,
+    "gradient_l2": 1.433234243342553e-05,
+    "before_argmax_ids": [
+      330
+    ],
+    "after_argmax_ids": [
+      330
+    ],
+    "before_argmax_text": [
+      " \""
+    ],
+    "after_argmax_text": [
+      " \""
+    ],
+    "before_top2_logit_gaps": [
+      0.875
+    ],
+    "kl_mean": 0.02946427505560844,
+    "kl_max": 0.02946427505560844,
+    "kl_per_prefix": [
+      0.02946427505560844
+    ],
+    "different_logits": 151928,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.0011640630724700405,
+    "changed_parameter_coordinates": 219455789
+  },
+  {
+    "trial": 26,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            330
+          ]
+        }
+      ],
+      "width": 1,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 1,
+    "width": 1,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.714239120483398,
+    "gradient_l2": 3.563557984805403e-05,
+    "before_argmax_ids": [
+      16
+    ],
+    "after_argmax_ids": [
+      16
+    ],
+    "before_argmax_text": [
+      "1"
+    ],
+    "after_argmax_text": [
+      "1"
+    ],
+    "before_top2_logit_gaps": [
+      0.4375
+    ],
+    "kl_mean": 0.023679132235154467,
+    "kl_max": 0.023679132235154467,
+    "kl_per_prefix": [
+      0.023679132235154467
+    ],
+    "different_logits": 151841,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002072586763761196,
+    "changed_parameter_coordinates": 269938383
+  },
+  {
+    "trial": 27,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 2,
+    "width": 2,
+    "target_batch_index": 0,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.675056457519531,
+    "gradient_l2": 3.8895761796162596e-05,
+    "before_argmax_ids": [
+      788
+    ],
+    "after_argmax_ids": [
+      8226
+    ],
+    "before_argmax_text": [
+      "\":"
+    ],
+    "after_argmax_text": [
+      "kit"
+    ],
+    "before_top2_logit_gaps": [
+      0.1875
+    ],
+    "kl_mean": 1.4667464150548053,
+    "kl_max": 1.4667464150548053,
+    "kl_per_prefix": [
+      1.4667464150548053
+    ],
+    "different_logits": 151602,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.011803106614928248,
+    "changed_parameter_coordinates": 439700353
+  },
+  {
+    "trial": 28,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            788
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 2,
+    "width": 2,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.694873809814453,
+    "gradient_l2": 5.813448048260281e-06,
+    "before_argmax_ids": [
+      330
+    ],
+    "after_argmax_ids": [
+      330
+    ],
+    "before_argmax_text": [
+      " \""
+    ],
+    "after_argmax_text": [
+      " \""
+    ],
+    "before_top2_logit_gaps": [
+      1.25
+    ],
+    "kl_mean": 0.00379699566483527,
+    "kl_max": 0.00379699566483527,
+    "kl_per_prefix": [
+      0.00379699566483527
+    ],
+    "different_logits": 147911,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002580619324786756,
+    "changed_parameter_coordinates": 369969347
+  },
+  {
+    "trial": 29,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            330
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 2,
+    "width": 2,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.645424842834473,
+    "gradient_l2": 3.2580680907267015e-05,
+    "before_argmax_ids": [
+      307
+    ],
+    "after_argmax_ids": [
+      307
+    ],
+    "before_argmax_text": [
+      "id"
+    ],
+    "after_argmax_text": [
+      "id"
+    ],
+    "before_top2_logit_gaps": [
+      0.25
+    ],
+    "kl_mean": 0.07431984430595388,
+    "kl_max": 0.07431984430595388,
+    "kl_per_prefix": [
+      0.07431984430595388
+    ],
+    "different_logits": 151174,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.010674609868637745,
+    "changed_parameter_coordinates": 436429539
+  },
+  {
+    "trial": 30,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172,
+            788
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 2,
+    "width": 2,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.652448654174805,
+    "gradient_l2": 5.5428875166859475e-06,
+    "before_argmax_ids": [
+      330
+    ],
+    "after_argmax_ids": [
+      330
+    ],
+    "before_argmax_text": [
+      " \""
+    ],
+    "after_argmax_text": [
+      " \""
+    ],
+    "before_top2_logit_gaps": [
+      1.5625
+    ],
+    "kl_mean": 0.004246645735921915,
+    "kl_max": 0.004246645735921915,
+    "kl_per_prefix": [
+      0.004246645735921915
+    ],
+    "different_logits": 150876,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.002197630029056755,
+    "changed_parameter_coordinates": 365221263
+  },
+  {
+    "trial": 31,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172,
+            330
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 2,
+    "width": 2,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.627467155456543,
+    "gradient_l2": 1.991401066442632e-05,
+    "before_argmax_ids": [
+      1944
+    ],
+    "after_argmax_ids": [
+      1944
+    ],
+    "before_argmax_text": [
+      "test"
+    ],
+    "after_argmax_text": [
+      "test"
+    ],
+    "before_top2_logit_gaps": [
+      0.625
+    ],
+    "kl_mean": 0.022805223580533388,
+    "kl_max": 0.022805223580533388,
+    "kl_per_prefix": [
+      0.022805223580533388
+    ],
+    "different_logits": 150683,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.008141684297946546,
+    "changed_parameter_coordinates": 426880484
+  },
+  {
+    "trial": 32,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            788,
+            330
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 2,
+    "width": 2,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.679959297180176,
+    "gradient_l2": 2.192913648234263e-05,
+    "before_argmax_ids": [
+      16
+    ],
+    "after_argmax_ids": [
+      16
+    ],
+    "before_argmax_text": [
+      "1"
+    ],
+    "after_argmax_text": [
+      "1"
+    ],
+    "before_top2_logit_gaps": [
+      0.3125
+    ],
+    "kl_mean": 0.0011765832458211054,
+    "kl_max": 0.0011765832458211054,
+    "kl_per_prefix": [
+      0.0011765832458211054
+    ],
+    "different_logits": 151240,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.007403428075578864,
+    "changed_parameter_coordinates": 440133268
+  },
+  {
+    "trial": 33,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788
+          ]
+        }
+      ],
+      "width": 3,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 3,
+    "width": 3,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.658781051635742,
+    "gradient_l2": 3.200790561192569e-05,
+    "before_argmax_ids": [
+      330
+    ],
+    "after_argmax_ids": [
+      330
+    ],
+    "before_argmax_text": [
+      " \""
+    ],
+    "after_argmax_text": [
+      " \""
+    ],
+    "before_top2_logit_gaps": [
+      0.0
+    ],
+    "kl_mean": 0.11699666592188704,
+    "kl_max": 0.11699666592188704,
+    "kl_per_prefix": [
+      0.11699666592188704
+    ],
+    "different_logits": 150731,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.011680498993890044,
+    "changed_parameter_coordinates": 444481382
+  },
+  {
+    "trial": 34,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            330
+          ]
+        }
+      ],
+      "width": 3,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 3,
+    "width": 3,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.69450569152832,
+    "gradient_l2": 7.147226207502727e-05,
+    "before_argmax_ids": [
+      330
+    ],
+    "after_argmax_ids": [
+      330
+    ],
+    "before_argmax_text": [
+      " \""
+    ],
+    "after_argmax_text": [
+      " \""
+    ],
+    "before_top2_logit_gaps": [
+      1.125
+    ],
+    "kl_mean": 1.874762359389329,
+    "kl_max": 1.874762359389329,
+    "kl_per_prefix": [
+      1.874762359389329
+    ],
+    "different_logits": 151819,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.020497750870106246,
+    "changed_parameter_coordinates": 462822274
+  },
+  {
+    "trial": 35,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            788,
+            330
+          ]
+        }
+      ],
+      "width": 3,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 3,
+    "width": 3,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.711572647094727,
+    "gradient_l2": 3.089718948461821e-05,
+    "before_argmax_ids": [
+      785
+    ],
+    "after_argmax_ids": [
+      785
+    ],
+    "before_argmax_text": [
+      "The"
+    ],
+    "after_argmax_text": [
+      "The"
+    ],
+    "before_top2_logit_gaps": [
+      0.3125
+    ],
+    "kl_mean": 0.012044662347579107,
+    "kl_max": 0.012044662347579107,
+    "kl_per_prefix": [
+      0.012044662347579107
+    ],
+    "different_logits": 150654,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.01081317212796568,
+    "changed_parameter_coordinates": 443519968
+  },
+  {
+    "trial": 36,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            14172,
+            788,
+            330
+          ]
+        }
+      ],
+      "width": 3,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 3,
+    "width": 3,
+    "target_batch_index": 0,
+    "target_flipped": false,
+    "same_original_transition": false,
+    "loss": 11.57348346710205,
+    "gradient_l2": 1.828587558112492e-05,
+    "before_argmax_ids": [
+      28648
+    ],
+    "after_argmax_ids": [
+      28648
+    ],
+    "before_argmax_text": [
+      "docker"
+    ],
+    "after_argmax_text": [
+      "docker"
+    ],
+    "before_top2_logit_gaps": [
+      1.0625
+    ],
+    "kl_mean": 0.003706055434216688,
+    "kl_max": 0.003706055434216688,
+    "kl_per_prefix": [
+      0.003706055434216688
+    ],
+    "different_logits": 150081,
+    "argmax_different_prefixes": 0,
+    "update_l2": 0.006956002458234187,
+    "changed_parameter_coordinates": 445702438
+  },
+  {
+    "trial": 37,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        }
+      ],
+      "width": 4,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 4,
+    "width": 4,
+    "target_batch_index": 0,
+    "target_flipped": true,
+    "same_original_transition": true,
+    "loss": 11.527222633361816,
+    "gradient_l2": 0.00019838552209003216,
+    "before_argmax_ids": [
+      13253
+    ],
+    "after_argmax_ids": [
+      76
+    ],
+    "before_argmax_text": [
+      "Auto"
+    ],
+    "after_argmax_text": [
+      "m"
+    ],
+    "before_top2_logit_gaps": [
+      0.125
+    ],
+    "kl_mean": 5.043520611628661,
+    "kl_max": 5.043520611628661,
+    "kl_per_prefix": [
+      5.043520611628661
+    ],
+    "different_logits": 151744,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.03435049448554881,
+    "changed_parameter_coordinates": 456648134
+  }
+]

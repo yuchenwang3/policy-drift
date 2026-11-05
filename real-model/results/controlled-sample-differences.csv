@@ -1,0 +1,13 @@
+method,optimizer,writeback,reference,sampled_coordinates,sampled_parameter_blocks,same_sampled_initial_parameters,different_sampled_after_step_coordinates,sampled_update_difference_l2,sampled_update_difference_abs_max
+ctrl_logits_round,sgd,fp32_master,ctrl_keep,1024,4,True,229,2.128877365496113e-08,9.778887033462524e-09
+ctrl_logits_round,sgd,bf16_writeback,ctrl_keep,1024,4,True,0,0.0,0.0
+ctrl_logits_round,adam,fp32_master,ctrl_keep,1024,4,True,27,3.7970303261805545e-08,3.6030542105436325e-08
+ctrl_logits_round,adam,bf16_writeback,ctrl_keep,1024,4,True,0,0.0,0.0
+ctrl_hidden_round,sgd,fp32_master,ctrl_keep,1024,4,True,256,3.6326635114372706e-08,1.4668330550193787e-08
+ctrl_hidden_round,sgd,bf16_writeback,ctrl_keep,1024,4,True,0,0.0,0.0
+ctrl_hidden_round,adam,fp32_master,ctrl_keep,1024,4,True,35,2.823587916142635e-05,1.998990774154663e-05
+ctrl_hidden_round,adam,bf16_writeback,ctrl_keep,1024,4,True,1,1.52587890625e-05,1.52587890625e-05
+ctrl_weight_round,sgd,fp32_master,ctrl_keep,1024,4,True,4,2.851813420022665e-10,2.3283064365386963e-10
+ctrl_weight_round,sgd,bf16_writeback,ctrl_keep,1024,4,True,0,0.0,0.0
+ctrl_weight_round,adam,fp32_master,ctrl_keep,1024,4,True,3,9.599857674951704e-10,9.313225746154785e-10
+ctrl_weight_round,adam,bf16_writeback,ctrl_keep,1024,4,True,0,0.0,0.0

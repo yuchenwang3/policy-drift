@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+work/
+runs/
+wandb/
+**/wandb/
+*.log
+*.pt
+*.pth
+*.safetensors
+.env
+.env.*

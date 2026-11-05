@@ -1,0 +1,11 @@
+{
+  "steps": [
+    128
+  ],
+  "first_moment_l2": 0.00565804265234539,
+  "second_moment_l2": 3.540714533773711,
+  "nonzero_first_moment_coordinates": 494032768,
+  "nonzero_second_moment_coordinates": 494032768,
+  "state_parameter_coordinates": 494032768,
+  "sample_sha256": "2261527122e339f43c358f68ada3e06bd6f4d8e3bc4389fd2627d410632dee5a"
+}

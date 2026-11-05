@@ -1,0 +1,34 @@
+[
+  {
+    "case_label": "original-transition",
+    "warmup_step": 16,
+    "nonzero_residual_coordinates": 494032582,
+    "nonzero_residual_below_epsilon": 479442250,
+    "history_v_dominates_new_v_coordinates": 494032582,
+    "history_v_dominates_residual_gradient_energy_fraction": 1.0
+  },
+  {
+    "case_label": "smallest-descendant",
+    "warmup_step": 16,
+    "nonzero_residual_coordinates": 494028946,
+    "nonzero_residual_below_epsilon": 493298943,
+    "history_v_dominates_new_v_coordinates": 494028946,
+    "history_v_dominates_residual_gradient_energy_fraction": 1.0
+  },
+  {
+    "case_label": "original-transition",
+    "warmup_step": 128,
+    "nonzero_residual_coordinates": 494032582,
+    "nonzero_residual_below_epsilon": 479442250,
+    "history_v_dominates_new_v_coordinates": 494032582,
+    "history_v_dominates_residual_gradient_energy_fraction": 1.0
+  },
+  {
+    "case_label": "smallest-descendant",
+    "warmup_step": 128,
+    "nonzero_residual_coordinates": 494028946,
+    "nonzero_residual_below_epsilon": 493298943,
+    "history_v_dominates_new_v_coordinates": 494028946,
+    "history_v_dominates_residual_gradient_energy_fraction": 1.0
+  }
+]

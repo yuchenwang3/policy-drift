@@ -1,0 +1,1720 @@
+{
+  "status": "complete",
+  "actual_optimizer_steps": 196,
+  "reduction_trial_count": 38,
+  "minimal_case": {
+    "rows": [
+      {
+        "origin": 3,
+        "family": "tool_name",
+        "input_ids": [
+          4913,
+          14172,
+          788,
+          330
+        ],
+        "decoded_text": "{\"tool\": \""
+      }
+    ],
+    "width": 4,
+    "pad_id": 151643,
+    "target_origin": 3
+  },
+  "original_argmax_pair": [
+    13253,
+    76
+  ],
+  "minimum_same_original_transition": {
+    "trial": 37,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ]
+        }
+      ],
+      "width": 4,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 4,
+    "width": 4,
+    "target_batch_index": 0,
+    "target_flipped": true,
+    "same_original_transition": true,
+    "loss": 11.527222633361816,
+    "gradient_l2": 0.00019838552209003216,
+    "before_argmax_ids": [
+      13253
+    ],
+    "after_argmax_ids": [
+      76
+    ],
+    "before_argmax_text": [
+      "Auto"
+    ],
+    "after_argmax_text": [
+      "m"
+    ],
+    "before_top2_logit_gaps": [
+      0.125
+    ],
+    "kl_mean": 5.043520611628661,
+    "kl_max": 5.043520611628661,
+    "kl_per_prefix": [
+      5.043520611628661
+    ],
+    "different_logits": 151744,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.03435049448554881,
+    "changed_parameter_coordinates": 456648134
+  },
+  "minimum_any_transition": {
+    "trial": 27,
+    "label": "single-prefix-subsequence",
+    "case": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "batch_size": 1,
+    "token_count": 2,
+    "width": 2,
+    "target_batch_index": 0,
+    "target_flipped": true,
+    "same_original_transition": false,
+    "loss": 11.675056457519531,
+    "gradient_l2": 3.8895761796162596e-05,
+    "before_argmax_ids": [
+      788
+    ],
+    "after_argmax_ids": [
+      8226
+    ],
+    "before_argmax_text": [
+      "\":"
+    ],
+    "after_argmax_text": [
+      "kit"
+    ],
+    "before_top2_logit_gaps": [
+      0.1875
+    ],
+    "kl_mean": 1.4667464150548053,
+    "kl_max": 1.4667464150548053,
+    "kl_per_prefix": [
+      1.4667464150548053
+    ],
+    "different_logits": 151602,
+    "argmax_different_prefixes": 1,
+    "update_l2": 0.011803106614928248,
+    "changed_parameter_coordinates": 439700353
+  },
+  "minimum_stable_control": {
+    "original-transition": {
+      "loss": 11.52722454071045,
+      "gradient_l2": 0.0,
+      "update_l2": 0.0,
+      "changed_parameter_coordinates": 0,
+      "before_argmax_ids": [
+        13253
+      ],
+      "after_argmax_ids": [
+        13253
+      ],
+      "before_argmax_text": [
+        "Auto"
+      ],
+      "after_argmax_text": [
+        "Auto"
+      ],
+      "before_top2_logit_gaps": [
+        0.125
+      ],
+      "kl_mean": 0.0,
+      "kl_max": 0.0,
+      "kl_per_prefix": [
+        0.0
+      ],
+      "different_logits": 0,
+      "argmax_different_prefixes": 0
+    },
+    "smallest-descendant": {
+      "loss": 11.67506217956543,
+      "gradient_l2": 0.0,
+      "update_l2": 0.0,
+      "changed_parameter_coordinates": 0,
+      "before_argmax_ids": [
+        788
+      ],
+      "after_argmax_ids": [
+        788
+      ],
+      "before_argmax_text": [
+        "\":"
+      ],
+      "after_argmax_text": [
+        "\":"
+      ],
+      "before_top2_logit_gaps": [
+        0.1875
+      ],
+      "kl_mean": 0.0,
+      "kl_max": 0.0,
+      "kl_per_prefix": [
+        0.0
+      ],
+      "different_logits": 0,
+      "argmax_different_prefixes": 0
+    }
+  },
+  "moment_comparisons": [
+    {
+      "label": "original-transition-initial-fresh",
+      "warmup_steps": 0,
+      "state_kind": "fresh",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.03435049448554881,
+        "changed_parameter_coordinates": 456648134,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 5.043520611628661,
+        "kl_max": 5.043520611628661,
+        "kl_per_prefix": [
+          5.043520611628661
+        ],
+        "different_logits": 151744,
+        "argmax_different_prefixes": 1
+      },
+      "native_minus_zero_update_l2": 0.03435049448554881,
+      "native_minus_zero_changed_parameter_coordinates": 456648134,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          76
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "m"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 5.043520611628661,
+        "kl_max": 5.043520611628661,
+        "kl_per_prefix": [
+          5.043520611628661
+        ],
+        "different_logits": 151744,
+        "argmax_different_prefixes": 1
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-initial-fresh",
+      "warmup_steps": 0,
+      "state_kind": "fresh",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.011803106614928248,
+        "changed_parameter_coordinates": 439700353,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 1.4667464150548053,
+        "kl_max": 1.4667464150548053,
+        "kl_per_prefix": [
+          1.4667464150548053
+        ],
+        "different_logits": 151602,
+        "argmax_different_prefixes": 1
+      },
+      "native_minus_zero_update_l2": 0.011803106614928248,
+      "native_minus_zero_changed_parameter_coordinates": 439700353,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 1.4667464150548053,
+        "kl_max": 1.4667464150548053,
+        "kl_per_prefix": [
+          1.4667464150548053
+        ],
+        "different_logits": 151602,
+        "argmax_different_prefixes": 1
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "original-transition-current-warm-16",
+      "warmup_steps": 16,
+      "state_kind": "real-warmup",
+      "adam_step_before": [
+        16
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.02846136015020684,
+        "changed_parameter_coordinates": 493894658,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          11.75
+        ],
+        "kl_mean": 6.869331388641855e-07,
+        "kl_max": 6.869331388641855e-07,
+        "kl_per_prefix": [
+          6.869331388641855e-07
+        ],
+        "different_logits": 146797,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 2.4964186743507045e-05,
+        "loss": 11.40853500366211,
+        "update_l2": 0.02846131274477604,
+        "changed_parameter_coordinates": 493894662,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          11.75
+        ],
+        "kl_mean": 7.209238437696919e-07,
+        "kl_max": 7.209238437696919e-07,
+        "kl_per_prefix": [
+          7.209238437696919e-07
+        ],
+        "different_logits": 147007,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 2.9440904786579988e-06,
+      "native_minus_zero_changed_parameter_coordinates": 17500920,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          12.125
+        ],
+        "kl_mean": 1.3971303883279251e-08,
+        "kl_max": 1.3971303883279251e-08,
+        "kl_per_prefix": [
+          1.3971303883279251e-08
+        ],
+        "different_logits": 134567,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "original-transition-current-fresh-16",
+      "warmup_steps": 16,
+      "state_kind": "fresh-at-warmup-weights",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          11.75
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 2.4964186743507045e-05,
+        "loss": 11.40853500366211,
+        "update_l2": 0.006430753394620644,
+        "changed_parameter_coordinates": 445418028,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          11.75
+        ],
+        "kl_mean": 5.86710740987635e-06,
+        "kl_max": 5.86710740987635e-06,
+        "kl_per_prefix": [
+          5.86710740987635e-06
+        ],
+        "different_logits": 151809,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 0.006430753394620644,
+      "native_minus_zero_changed_parameter_coordinates": 445418028,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          11.75
+        ],
+        "kl_mean": 5.86710740987635e-06,
+        "kl_max": 5.86710740987635e-06,
+        "kl_per_prefix": [
+          5.86710740987635e-06
+        ],
+        "different_logits": 151809,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "original-transition-original-warm-16",
+      "warmup_steps": 16,
+      "state_kind": "moment-transplant",
+      "adam_step_before": [
+        16
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.028461360156740684,
+        "changed_parameter_coordinates": 493894688,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 0.09743978228251403,
+        "kl_max": 0.09743978228251403,
+        "kl_per_prefix": [
+          0.09743978228251403
+        ],
+        "different_logits": 150904,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.02846143619807654,
+        "changed_parameter_coordinates": 493894759,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 0.09743978228515793,
+        "kl_max": 0.09743978228515793,
+        "kl_per_prefix": [
+          0.09743978228515793
+        ],
+        "different_logits": 150904,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 2.858418265177311e-06,
+      "native_minus_zero_changed_parameter_coordinates": 18571069,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.25
+        ],
+        "kl_mean": 1.9833316828417573e-15,
+        "kl_max": 1.9833316828417573e-15,
+        "kl_per_prefix": [
+          1.9833316828417573e-15
+        ],
+        "different_logits": 2,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-current-warm-16",
+      "warmup_steps": 16,
+      "state_kind": "real-warmup",
+      "adam_step_before": [
+        16
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.02846136015020684,
+        "changed_parameter_coordinates": 493894658,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          0.9375
+        ],
+        "kl_mean": 0.0069470697430594275,
+        "kl_max": 0.0069470697430594275,
+        "kl_per_prefix": [
+          0.0069470697430594275
+        ],
+        "different_logits": 142823,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 1.4812895809219136e-05,
+        "loss": 11.65852165222168,
+        "update_l2": 0.02846134284534594,
+        "changed_parameter_coordinates": 493894659,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          0.9375
+        ],
+        "kl_mean": 0.006947069741247952,
+        "kl_max": 0.006947069741247952,
+        "kl_per_prefix": [
+          0.006947069741247952
+        ],
+        "different_logits": 142820,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 2.4405336488804097e-06,
+      "native_minus_zero_changed_parameter_coordinates": 12988806,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          1.0
+        ],
+        "kl_mean": 4.8755157832263554e-12,
+        "kl_max": 4.8755157832263554e-12,
+        "kl_per_prefix": [
+          4.8755157832263554e-12
+        ],
+        "different_logits": 12,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-current-fresh-16",
+      "warmup_steps": 16,
+      "state_kind": "fresh-at-warmup-weights",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          0.9375
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 1.4812895809219136e-05,
+        "loss": 11.65852165222168,
+        "update_l2": 0.004091899444448974,
+        "changed_parameter_coordinates": 408503803,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          0.9375
+        ],
+        "kl_mean": 0.04749842737301354,
+        "kl_max": 0.04749842737301354,
+        "kl_per_prefix": [
+          0.04749842737301354
+        ],
+        "different_logits": 151843,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 0.004091899444448974,
+      "native_minus_zero_changed_parameter_coordinates": 408503803,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          0.9375
+        ],
+        "kl_mean": 0.04749842737301354,
+        "kl_max": 0.04749842737301354,
+        "kl_per_prefix": [
+          0.04749842737301354
+        ],
+        "different_logits": 151843,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-original-warm-16",
+      "warmup_steps": 16,
+      "state_kind": "moment-transplant",
+      "adam_step_before": [
+        16
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.028461360156740684,
+        "changed_parameter_coordinates": 493894688,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 0.021419819305300784,
+        "kl_max": 0.021419819305300784,
+        "kl_per_prefix": [
+          0.021419819305300784
+        ],
+        "different_logits": 149162,
+        "argmax_different_prefixes": 1
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.028461384395866283,
+        "changed_parameter_coordinates": 493894680,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 0.021419819305300784,
+        "kl_max": 0.021419819305300784,
+        "kl_per_prefix": [
+          0.021419819305300784
+        ],
+        "different_logits": 149162,
+        "argmax_different_prefixes": 1
+      },
+      "native_minus_zero_update_l2": 3.1096949953028602e-06,
+      "native_minus_zero_changed_parameter_coordinates": 17825897,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          8226
+        ],
+        "after_argmax_ids": [
+          8226
+        ],
+        "before_argmax_text": [
+          "kit"
+        ],
+        "after_argmax_text": [
+          "kit"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "original-transition-current-warm-128",
+      "warmup_steps": 128,
+      "state_kind": "real-warmup",
+      "adam_step_before": [
+        128
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0002849312925462122,
+        "changed_parameter_coordinates": 278964934,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          14.125
+        ],
+        "kl_mean": 1.5978902218650506e-08,
+        "kl_max": 1.5978902218650506e-08,
+        "kl_per_prefix": [
+          1.5978902218650506e-08
+        ],
+        "different_logits": 145937,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 1.7263175363705498e-05,
+        "loss": 11.364580154418945,
+        "update_l2": 0.00028489773360211254,
+        "changed_parameter_coordinates": 280636789,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          14.125
+        ],
+        "kl_mean": 1.5978902226753647e-08,
+        "kl_max": 1.5978902226753647e-08,
+        "kl_per_prefix": [
+          1.5978902226753647e-08
+        ],
+        "different_logits": 145938,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 1.7565498461102888e-06,
+      "native_minus_zero_changed_parameter_coordinates": 11716397,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          14.0
+        ],
+        "kl_mean": 1.894177915543053e-18,
+        "kl_max": 1.894177915543053e-18,
+        "kl_per_prefix": [
+          1.894177915543053e-18
+        ],
+        "different_logits": 11,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "original-transition-current-fresh-128",
+      "warmup_steps": 128,
+      "state_kind": "fresh-at-warmup-weights",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          14.125
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 1.7263175363705498e-05,
+        "loss": 11.364580154418945,
+        "update_l2": 0.004575382019914085,
+        "changed_parameter_coordinates": 423957882,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          14.125
+        ],
+        "kl_mean": 2.98916406910354e-07,
+        "kl_max": 2.98916406910354e-07,
+        "kl_per_prefix": [
+          2.98916406910354e-07
+        ],
+        "different_logits": 151809,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 0.004575382019914085,
+      "native_minus_zero_changed_parameter_coordinates": 423957882,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          14.125
+        ],
+        "kl_mean": 2.98916406910354e-07,
+        "kl_max": 2.98916406910354e-07,
+        "kl_per_prefix": [
+          2.98916406910354e-07
+        ],
+        "different_logits": 151809,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "original-transition-original-warm-128",
+      "warmup_steps": 128,
+      "state_kind": "moment-transplant",
+      "adam_step_before": [
+        128
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0002849312721767541,
+        "changed_parameter_coordinates": 279023808,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 2.887381313374183e-14,
+        "kl_max": 2.887381313374183e-14,
+        "kl_per_prefix": [
+          2.887381313374183e-14
+        ],
+        "different_logits": 1,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 0.00019838552209003216,
+        "loss": 11.527222633361816,
+        "update_l2": 0.00028493218466319,
+        "changed_parameter_coordinates": 283442834,
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 2.887381313374183e-14,
+        "kl_max": 2.887381313374183e-14,
+        "kl_per_prefix": [
+          2.887381313374183e-14
+        ],
+        "different_logits": 1,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 2.2312289883770627e-06,
+      "native_minus_zero_changed_parameter_coordinates": 19517612,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          13253
+        ],
+        "after_argmax_ids": [
+          13253
+        ],
+        "before_argmax_text": [
+          "Auto"
+        ],
+        "after_argmax_text": [
+          "Auto"
+        ],
+        "before_top2_logit_gaps": [
+          0.125
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172,
+              788,
+              330
+            ],
+            "decoded_text": "{\"tool\": \""
+          }
+        ],
+        "width": 4,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-current-warm-128",
+      "warmup_steps": 128,
+      "state_kind": "real-warmup",
+      "adam_step_before": [
+        128
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0002849312925462122,
+        "changed_parameter_coordinates": 278964934,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          2.125
+        ],
+        "kl_mean": 0.00012900096009571188,
+        "kl_max": 0.00012900096009571188,
+        "kl_per_prefix": [
+          0.00012900096009571188
+        ],
+        "different_logits": 124399,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 2.9555169620749142e-05,
+        "loss": 11.647748947143555,
+        "update_l2": 0.00028489662242519974,
+        "changed_parameter_coordinates": 283666054,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          2.125
+        ],
+        "kl_mean": 0.00012899974329410845,
+        "kl_max": 0.00012899974329410845,
+        "kl_per_prefix": [
+          0.00012899974329410845
+        ],
+        "different_logits": 124397,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 2.828463062819728e-06,
+      "native_minus_zero_changed_parameter_coordinates": 19557366,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          2.125
+        ],
+        "kl_mean": 9.926858073456746e-10,
+        "kl_max": 9.926858073456746e-10,
+        "kl_per_prefix": [
+          9.926858073456746e-10
+        ],
+        "different_logits": 22,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-current-fresh-128",
+      "warmup_steps": 128,
+      "state_kind": "fresh-at-warmup-weights",
+      "adam_step_before": [
+        0
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0,
+        "changed_parameter_coordinates": 0,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          2.125
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 2.9555169620749142e-05,
+        "loss": 11.647748947143555,
+        "update_l2": 0.0069991302544889725,
+        "changed_parameter_coordinates": 440265921,
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          2.125
+        ],
+        "kl_mean": 0.16046112583154767,
+        "kl_max": 0.16046112583154767,
+        "kl_per_prefix": [
+          0.16046112583154767
+        ],
+        "different_logits": 151852,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 0.0069991302544889725,
+      "native_minus_zero_changed_parameter_coordinates": 440265921,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          1836
+        ],
+        "after_argmax_ids": [
+          1836
+        ],
+        "before_argmax_text": [
+          "search"
+        ],
+        "after_argmax_text": [
+          "search"
+        ],
+        "before_top2_logit_gaps": [
+          2.125
+        ],
+        "kl_mean": 0.16046112583154767,
+        "kl_max": 0.16046112583154767,
+        "kl_per_prefix": [
+          0.16046112583154767
+        ],
+        "different_logits": 151852,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    },
+    {
+      "label": "smallest-descendant-original-warm-128",
+      "warmup_steps": 128,
+      "state_kind": "moment-transplant",
+      "adam_step_before": [
+        128
+      ],
+      "zero_gradient_control": {
+        "gradient_l2": 0.0,
+        "loss": null,
+        "update_l2": 0.0002849312721767541,
+        "changed_parameter_coordinates": 279023808,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 4.578052220245103e-15,
+        "kl_max": 4.578052220245103e-15,
+        "kl_per_prefix": [
+          4.578052220245103e-15
+        ],
+        "different_logits": 3,
+        "argmax_different_prefixes": 0
+      },
+      "native_gradient_branch": {
+        "gradient_l2": 3.8895761796162596e-05,
+        "loss": 11.675056457519531,
+        "update_l2": 0.00028494763752723583,
+        "changed_parameter_coordinates": 283661647,
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 4.578052220245103e-15,
+        "kl_max": 4.578052220245103e-15,
+        "kl_per_prefix": [
+          4.578052220245103e-15
+        ],
+        "different_logits": 3,
+        "argmax_different_prefixes": 0
+      },
+      "native_minus_zero_update_l2": 2.6211201335992308e-06,
+      "native_minus_zero_changed_parameter_coordinates": 17519616,
+      "native_vs_zero_policy": {
+        "before_argmax_ids": [
+          788
+        ],
+        "after_argmax_ids": [
+          788
+        ],
+        "before_argmax_text": [
+          "\":"
+        ],
+        "after_argmax_text": [
+          "\":"
+        ],
+        "before_top2_logit_gaps": [
+          0.1875
+        ],
+        "kl_mean": 0.0,
+        "kl_max": 0.0,
+        "kl_per_prefix": [
+          0.0
+        ],
+        "different_logits": 0,
+        "argmax_different_prefixes": 0
+      },
+      "case": {
+        "rows": [
+          {
+            "origin": 3,
+            "family": "tool_name",
+            "input_ids": [
+              4913,
+              14172
+            ]
+          }
+        ],
+        "width": 2,
+        "pad_id": 151643,
+        "target_origin": 3
+      }
+    }
+  ],
+  "probe_cases": {
+    "original-transition": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172,
+            788,
+            330
+          ],
+          "decoded_text": "{\"tool\": \""
+        }
+      ],
+      "width": 4,
+      "pad_id": 151643,
+      "target_origin": 3
+    },
+    "smallest-descendant": {
+      "rows": [
+        {
+          "origin": 3,
+          "family": "tool_name",
+          "input_ids": [
+            4913,
+            14172
+          ]
+        }
+      ],
+      "width": 2,
+      "pad_id": 151643,
+      "target_origin": 3
+    }
+  },
+  "warmup_actual_optimizer_steps": 128,
+  "minimality_scope": "nonempty ordered subsequences of original changed prefix; batch deletions preserving that prefix; no weight/model-size search",
+  "one_prefix_one_token_is_input_size_lower_bound": false
+}
